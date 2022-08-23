@@ -1,0 +1,10 @@
+pandas
+plotly-express
+pyyaml
+requests
+streamlit
+streamlit-aggrid
+st_btn_select
+web3
+
+
