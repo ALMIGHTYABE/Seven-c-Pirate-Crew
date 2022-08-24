@@ -349,8 +349,7 @@ if selection == "Pirate Life":
                 st.markdown("### Missing Traits")
                 # missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure", "Common", "Specials", "Legendary"],
                                                      # default=pd.unique(df["Type"]))
-                missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure"],
-                                                     default=pd.unique(df["Type"]))
+                missing_type_filter = st.multiselect("Pirate Life Type", ["Treasure"], default=["Treasure"])
                 missing_df = df[df["Type"].isin(missing_type_filter)]
                 missing_nft_df = nft_df[nft_df["Type"].isin(missing_type_filter)]
 
@@ -360,10 +359,10 @@ if selection == "Pirate Life":
                 skin_missing = [i for i in pd.unique(missing_nft_df["Skin"]) if i not in pd.unique(missing_df["Skin"])]
                 body_missing = [i for i in pd.unique(missing_nft_df["Body"]) if i not in pd.unique(missing_df["Body"])]
                 eyes_missing = [i for i in pd.unique(missing_nft_df["Eyes"]) if i not in pd.unique(missing_df["Eyes"])]
-                weapon_missing = [i for i in pd.unique(missing_nft_df["weapon"]) if
-                                  i not in pd.unique(missing_df["weapon"])]
-                necklace_missing = [i for i in pd.unique(missing_nft_df["necklace"]) if
-                                    i not in pd.unique(missing_df["necklace"])]
+                weapon_missing = [i for i in pd.unique(missing_nft_df["Weapon"]) if
+                                  i not in pd.unique(missing_df["Weapon"])]
+                necklace_missing = [i for i in pd.unique(missing_nft_df["Necklace"]) if
+                                    i not in pd.unique(missing_df["Necklace"])]
                 eyepatch_missing = [i for i in pd.unique(missing_nft_df["Eye Patch"]) if
                                     i not in pd.unique(missing_df["Eye Patch"])]
                 hair_missing = [i for i in pd.unique(missing_nft_df["Hair"]) if i not in pd.unique(missing_df["Hair"])]
