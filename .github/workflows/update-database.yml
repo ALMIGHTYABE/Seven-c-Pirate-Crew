@@ -1,4 +1,4 @@
-name: Update corgis
+name: Update Data
 on:
   schedule:
     - cron: '*/30 * * * *'
