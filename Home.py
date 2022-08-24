@@ -1,11 +1,10 @@
 # Importing Libraries
-import base64
 import time
 
 import pandas as pd  # read csv, df manipulation
 import streamlit as st  # data web app development
-import yaml
 import toml
+import yaml
 from st_aggrid import AgGrid, GridOptionsBuilder
 from st_aggrid.shared import GridUpdateMode
 from st_btn_select import st_btn_select
@@ -33,33 +32,19 @@ config = read_params(params_path)
 thememode = st.sidebar.checkbox('Dark Mode')
 light = config["home"]["light"]
 dark = config["home"]["dark"]
-light_title = config["home"]["light_title"]
-dark_title = config["home"]["dark_title"]
 
 if thememode:
-    st.markdown(dark_title, unsafe_allow_html=True)
     with open(".streamlit/config.toml", 'w') as f:
         toml.dump(dark, f)
 else:
-    st.markdown(light_title, unsafe_allow_html=True)
     with open(".streamlit/config.toml", 'w') as f:
         toml.dump(light, f)
 
-
-# Dashboard Title
+# Dashboard Logo & Title
+st.image("icons/piratelife.png", width=100)
 col1, col2 = st.columns(2)
-col1.markdown(
-    f"""
-    <div class="container">
-        <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open("icons/piratelife.png", "rb").read()).decode()}">
-        <p class="logo-text">Seven c Pirate Crew</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+col1.title("Seven c Pirate Crew")
 col2.markdown('<div style="text-align: right;">Data is updated every 30 minutes</div>', unsafe_allow_html=True)
-
-
 
 # Select Button
 selection = st_btn_select(("Pixel Pirates", "Pirate Life"))
@@ -362,29 +347,37 @@ if selection == "Pirate Life":
             missing_traits = st.checkbox('See Missing Traits')
             if missing_traits:
                 st.markdown("### Missing Traits")
-                missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure", "Common", "Specials", "Legendary"],
+                # missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure", "Common", "Specials", "Legendary"],
+                                                     # default=pd.unique(df["Type"]))
+                missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure"],
                                                      default=pd.unique(df["Type"]))
                 missing_df = df[df["Type"].isin(missing_type_filter)]
                 missing_nft_df = nft_df[nft_df["Type"].isin(missing_type_filter)]
 
                 # Finding Missing Traits
-                background_missing = [i for i in pd.unique(missing_nft_df["Background"]) if i not in pd.unique(missing_df["Background"])]
+                background_missing = [i for i in pd.unique(missing_nft_df["Background"]) if
+                                      i not in pd.unique(missing_df["Background"])]
                 skin_missing = [i for i in pd.unique(missing_nft_df["Skin"]) if i not in pd.unique(missing_df["Skin"])]
                 body_missing = [i for i in pd.unique(missing_nft_df["Body"]) if i not in pd.unique(missing_df["Body"])]
                 eyes_missing = [i for i in pd.unique(missing_nft_df["Eyes"]) if i not in pd.unique(missing_df["Eyes"])]
-                weapon_missing = [i for i in pd.unique(missing_nft_df["weapon"]) if i not in pd.unique(missing_df["weapon"])]
-                necklace_missing = [i for i in pd.unique(missing_nft_df["necklace"]) if i not in pd.unique(missing_df["necklace"])]
-                eyepatch_missing = [i for i in pd.unique(missing_nft_df["Eye Patch"]) if i not in pd.unique(missing_df["Eye Patch"])]
+                weapon_missing = [i for i in pd.unique(missing_nft_df["weapon"]) if
+                                  i not in pd.unique(missing_df["weapon"])]
+                necklace_missing = [i for i in pd.unique(missing_nft_df["necklace"]) if
+                                    i not in pd.unique(missing_df["necklace"])]
+                eyepatch_missing = [i for i in pd.unique(missing_nft_df["Eye Patch"]) if
+                                    i not in pd.unique(missing_df["Eye Patch"])]
                 hair_missing = [i for i in pd.unique(missing_nft_df["Hair"]) if i not in pd.unique(missing_df["Hair"])]
                 hat_missing = [i for i in pd.unique(missing_nft_df["Hat"]) if i not in pd.unique(missing_df["Hat"])]
-                mouth_missing = [i for i in pd.unique(missing_nft_df["Mouth"]) if i not in pd.unique(missing_df["Mouth"])]
+                mouth_missing = [i for i in pd.unique(missing_nft_df["Mouth"]) if
+                                 i not in pd.unique(missing_df["Mouth"])]
                 pet_missing = [i for i in pd.unique(missing_nft_df["Pet"]) if i not in pd.unique(missing_df["Pet"])]
 
                 missing = pd.DataFrame(
                     [background_missing, skin_missing, body_missing, eyes_missing, weapon_missing, necklace_missing,
                      eyepatch_missing, hair_missing, hat_missing, mouth_missing, pet_missing])
                 missing = missing.transpose()
-                missing.columns = ['Background', 'Skin', 'Body', 'Eyes', 'Weapon', 'Necklace', 'Eye Patch', 'Hair', 'Hat', 'Mouth', 'Pet']
+                missing.columns = ['Background', 'Skin', 'Body', 'Eyes', 'Weapon', 'Necklace', 'Eye Patch', 'Hair',
+                                   'Hat', 'Mouth', 'Pet']
                 missing.fillna('', inplace=True)
 
                 selection = aggrid_interactive_table(missing)

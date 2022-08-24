@@ -18,43 +18,6 @@ scrape2:
 home:
   light: {"theme": {"backgroundColor" : "#FFFFFF", "secondaryBackgroundColor" : "#f0f2f6", "textColor" : "#262730", "font" : "sans serif"}}
   dark: {"theme": {"backgroundColor" : "#0e1117", "secondaryBackgroundColor" : "#31333F", "textColor" : "#fafafa", "font" : "sans serif"}}
-  light_title: '
-    <style>
-    .container {
-        display: flex;
-    }
-    .logo-text {
-        font-weight:700 !important;
-        font-size:50px !important;
-        color: #000000 !important;
-        padding-top: 40px !important;
-    }
-    .logo-img {
-        float:right;
-        width:100px;
-        height:100px;
-    }
-    </style>
-    '
-
-  dark_title: '
-    <style>
-    .container {
-        display: flex;
-    }
-    .logo-text {
-        font-weight:700 !important;
-        font-size:50px !important;
-        color: #FFFFFF !important;
-        padding-top: 40px !important;
-    }
-    .logo-img {
-        float:right;
-        width:100px;
-        height:100px;
-    }
-    </style>
-    '
   pixel-pirates: "data/pixel pirates/address.csv"
   pirate-life: "data/pirate life/address.csv"
 
