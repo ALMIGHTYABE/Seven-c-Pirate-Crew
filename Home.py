@@ -349,7 +349,7 @@ if selection == "Pirate Life":
                 st.markdown("### Missing Traits")
                 # missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure", "Common", "Specials", "Legendary"],
                                                      # default=pd.unique(df["Type"]))
-                missing_type_filter = st.multiselect("Pirate Life Type", pd.unique(df["Type"], default=pd.unique(df["Type"])
+                missing_type_filter = st.multiselect("Pirate Life Type", pd.unique(df["Type"]), default=pd.unique(df["Type"]))
                 missing_df = df[df["Type"].isin(missing_type_filter)]
                 missing_nft_df = nft_df[nft_df["Type"].isin(missing_type_filter)]
 
