@@ -1,5 +1,8 @@
 # Import Packages
+import time
+
 import pandas as pd
+import requests
 import yaml
 from web3 import Web3
 
@@ -17,6 +20,7 @@ config = read_params(params_path)
 # Scrape Data and Save to CSV
 # Pixel Pirates
 try:
+    # NFT DATA
     ppnos = pd.read_csv(config["scrape1"]["sheets_url"])
     nft_df = pd.read_csv(config["scrape1"]["traits"])
 
@@ -34,11 +38,34 @@ try:
     nft_df["address"] = wallet_address  # Appending addresses to DF
     nft_df.to_csv("data/pixel pirates/address.csv", index=False)  # Save to CSV
 
+    # SALES DATA
+    sales_history = config["scrape1"]["sales_history"]
+
+    r = requests.get(sales_history)
+    # Status Code Check
+    if r.status_code == 200:
+        sale = r.json()['sales']
+        sales_hist = pd.json_normalize(sale)  # JSON to DF
+        sales_hist.price = sales_hist.price.apply(lambda x: int(x) / 1000000000000000000)
+        sales_hist.endTime = sales_hist.endTime.apply(
+            lambda x: time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(int(x))))
+        sales_hist['endTime'] = pd.to_datetime(sales_hist['endTime']).dt.date
+        sales_hist['tokenId'] = sales_hist['tokenId'].apply(lambda x: int(x))
+        sales_hist = sales_hist[sales_hist["tokenId"].isin(nft_df["number"])]
+        sales_hist = pd.merge(sales_hist, nft_df[['number', 'image', 'Batch', 'Type', 'Rank', 'Total Score']],
+                              left_on='tokenId', right_on='number', how='left')
+        sales_hist['image'] = sales_hist['image'].apply(lambda x: '<img src=' + x + ' width="100">')
+        sales_hist['Rarity Score / FTM'] = sales_hist['Total Score'] / sales_hist['price']
+        sales_hist.to_csv("data/pixel pirates/history.csv", index=False)  # Save to CSV
+
+
+
 except Exception as e:
     error = {"error": e}
 
 # Pirate Life
 try:
+    # NFT DATA
     life_df = pd.read_csv(config["traits"]["sheets_url"])
     nft_df = pd.read_csv(config["scrape2"]["traits"])
 
@@ -55,6 +82,26 @@ try:
 
     nft_df["address"] = wallet_address  # Appending addresses to DF
     nft_df.to_csv("data/pirate life/address.csv", index=False)  # Save to CSV
+
+    # SALES DATA
+    sales_history = config["scrape2"]["sales_history"]
+
+    r = requests.get(sales_history)
+    # Status Code Check
+    if r.status_code == 200:
+        sale = r.json()['sales']
+        sales_hist = pd.json_normalize(sale)  # JSON to DF
+        sales_hist.price = sales_hist.price.apply(lambda x: int(x) / 1000000000000000000)
+        sales_hist.endTime = sales_hist.endTime.apply(
+            lambda x: time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(int(x))))
+        sales_hist['endTime'] = pd.to_datetime(sales_hist['endTime']).dt.date
+        sales_hist['tokenId'] = sales_hist['tokenId'].apply(lambda x: int(x))
+        sales_hist = sales_hist[sales_hist["tokenId"].isin(nft_df["number"])]
+        sales_hist = pd.merge(sales_hist, nft_df[['number', 'image', 'Batch', 'Type', 'Rank', 'Total Score']],
+                              left_on='tokenId', right_on='number', how='left')
+        sales_hist['image'] = sales_hist['image'].apply(lambda x: '<img src=' + x + ' width="100">')
+        sales_hist['Rarity Score / FTM'] = sales_hist['Total Score'] / sales_hist['price']
+        sales_hist.to_csv("data/pirate life/history.csv", index=False)  # Save to CSV
 
 except Exception as e:
     error = {"error": e}

@@ -12,7 +12,7 @@ from st_btn_select import st_btn_select
 # App
 st.set_page_config(
     page_title="Seven c Pirate Crew",
-    page_icon="icons/pp.png",
+    page_icon="icons/piratelife.png",
     layout="wide",
 )
 
@@ -28,17 +28,17 @@ def read_params(config_path):
 
 config = read_params(params_path)
 
-# Theme
-thememode = st.sidebar.checkbox('Dark Mode')
-light = config["home"]["light"]
-dark = config["home"]["dark"]
-
-if thememode:
-    with open(".streamlit/config.toml", 'w') as f:
-        toml.dump(dark, f)
-else:
-    with open(".streamlit/config.toml", 'w') as f:
-        toml.dump(light, f)
+# # Theme
+# thememode = st.sidebar.checkbox('Dark Mode')
+# light = config["home"]["light"]
+# dark = config["home"]["dark"]
+#
+# if thememode:
+#     with open(".streamlit/config.toml", 'w') as f:
+#         toml.dump(dark, f)
+# else:
+#     with open(".streamlit/config.toml", 'w') as f:
+#         toml.dump(light, f)
 
 # Dashboard Logo & Title
 st.image("icons/piratelife.png", width=100)
@@ -54,15 +54,15 @@ if selection == "Pixel Pirates":
     st.markdown("### Pixel Pirates")
 
     # Read Data
-    pixel_pirate_data = config["home"]["pixel-pirates"]
+    pixel_pirate_data = config["home"]["pixel_pirates"]
 
 
-    def get_data() -> pd.DataFrame:
-        return pd.read_csv(pixel_pirate_data)
+    def get_data(data) -> pd.DataFrame:
+        return pd.read_csv(data)
 
 
-    df = get_data()
-    nft_df = get_data()
+    df = get_data(pixel_pirate_data)
+    nft_df = get_data(pixel_pirate_data)
 
     # Data Manipulation
     ## Sidebar Data
@@ -224,15 +224,15 @@ if selection == "Pirate Life":
     st.markdown("### Pirate Life")
 
     # Read Data
-    pirate_life_data = config["home"]["pirate-life"]
+    pirate_life_data = config["home"]["pirate_life"]
 
 
-    def get_data() -> pd.DataFrame:
-        return pd.read_csv(pirate_life_data)
+    def get_data(data) -> pd.DataFrame:
+        return pd.read_csv(data)
 
 
-    df = get_data()
-    nft_df = get_data()
+    df = get_data(pirate_life_data)
+    nft_df = get_data(pirate_life_data)
 
     # Data Manipulation
     ## Sidebar Data
