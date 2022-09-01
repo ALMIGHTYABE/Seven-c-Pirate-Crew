@@ -13,13 +13,11 @@ st.title("💬 About")
 
 # Content
 st.write("""## What is Seven c Pirate Crew?
-Pixel Pirates (PPs) are the brainchild of the legendary Hoeem. Together with the expertise of Hedgey Finance, Hoeem brought to life a wildly popular project with a large supporting community. 🤺
+The ‘Seven c Pirate Crew’ is a collective for all things pirate…
 
-Simply put it is a generative art collection of pirates all of which live on the blockchain all with 1 cLQDR inside; as cLQDR auto-compounds and tracks the price of LQDR these NFTs have a base floor attached to how we value them. The NFT can be burnt through Hedgey.finance to accrue to the underlying token it is backed by. 💰
+Want to be an on chain pirate? The ‘Seven c’ collection was launched with ‘Pixel Pirates’ and now continues with ‘Pirate Life.' Both FNFTs contain $cLQDR, an auto-compounding liquid version of Liquid Driver's xLQDR.
 
-Along with that, there are also various giveaways and competitions that are running where your Pixel Pirate traits are needed to compete in! 😛
-
-The Pirate Community are always looking for new crew mates on board, they usually hang out in both the LiquidDriver Discord “NFT-Lounge” and in the Hedgey Finance discord! Come say hello if you have any questions to ask them! 😉 
+Treasure hunts will continue and new pirate gems will be unearthed. Are you an on chain pirate? If so come and join the Pirate Crew!
 
 ## Why this Tracker?
 This was created by me aka 🍓ALMIGHTY ABE🍓 to help Seven c Pirate Crew holders to view their collection, check out the various attributes they hold, follow sales on Secondary, and more.

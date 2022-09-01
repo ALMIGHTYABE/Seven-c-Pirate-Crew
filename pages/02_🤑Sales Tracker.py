@@ -68,7 +68,6 @@ if selection == "Pixel Pirates":
         st.markdown("### Active Sales")
 
         # Sidebar Data
-        print(sales_df[sales_df['Batch'].isna()])
         batch = pd.unique(sales_df["Batch"])
         type = pd.unique(sales_df["Type"])
         background = pd.unique(sales_df["Background"])
