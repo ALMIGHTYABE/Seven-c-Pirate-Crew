@@ -15,9 +15,9 @@ st.title("💬 About")
 st.write("""## What is Seven c Pirate Crew?
 The ‘Seven c Pirate Crew’ is a collective for all things pirate…
 
-Want to be an on chain pirate? The ‘Seven c’ collection was launched with ‘Pixel Pirates’ and now continues with ‘Pirate Life.' Both FNFTs contain $cLQDR, an auto-compounding liquid version of Liquid Driver's xLQDR.
+Want to be an on chain pirate? The ‘Seven c’ collection was launched with ‘Pixel Pirates’ and now continues with ‘Pirate Life'. Both FNFTs contain cLQDR, an auto-compounding liquid version of Liquid Driver's xLQDR. 🤑
 
-Treasure hunts will continue and new pirate gems will be unearthed. Are you an on chain pirate? If so come and join the Pirate Crew!
+Treasure hunts will continue and new pirate gems will be unearthed. Are you an on chain pirate? If so come and join the Pirate Crew! 🏴‍☠️
 
 ## Why this Tracker?
 This was created by me aka 🍓ALMIGHTY ABE🍓 to help Seven c Pirate Crew holders to view their collection, check out the various attributes they hold, follow sales on Secondary, and more.
