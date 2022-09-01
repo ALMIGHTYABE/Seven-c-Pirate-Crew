@@ -18,8 +18,6 @@ scrape2:
   sales_history: https://api.paintswap.finance/v2/sales?numToFetch=1000&sold=true&sort=recently-sold&collections[0]=0xb75b8dac018f36cdc1e16042bb598c99885ecbf9&version=2&orderBy=endTime&includeNFTs=true
 
 home:
-  light: {"theme": {"backgroundColor" : "#FFFFFF", "secondaryBackgroundColor" : "#f0f2f6", "textColor" : "#262730", "font" : "sans serif"}}
-  dark: {"theme": {"backgroundColor" : "#0e1117", "secondaryBackgroundColor" : "#31333F", "textColor" : "#fafafa", "font" : "sans serif"}}
   pixel_pirates: "data/pixel pirates/address.csv"
   pirate_life: "data/pirate life/address.csv"
 

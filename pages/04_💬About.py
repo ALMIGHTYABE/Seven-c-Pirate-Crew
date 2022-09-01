@@ -11,6 +11,9 @@ st.set_page_config(
 # Title
 st.title("💬 About")
 
+# Sidebar Mint Info
+st.sidebar.info("Pirate Life Batch One: [Mint Now](https://app.hedgey.finance/#/nfts/)")
+
 # Content
 st.write("""## What is Seven c Pirate Crew?
 The ‘Seven c Pirate Crew’ is a collective for all things pirate…
@@ -34,13 +37,14 @@ Hedgey Finance Discord: https://discord.gg/hedgey
 Twitter community:
 https://twitter.com/i/communities/1529078922847068160
 
+Mint Page:
+https://app.hedgey.finance/#/nfts/
+
 Pixel Pirate Secondary market:
 https://paintswap.finance/marketplace/collections/0x2aa5d15eb36e5960d056e8fea6e7bb3e2a06a351
 
 Pirate Life Secondary market:
 https://paintswap.finance/marketplace/collections/0xb75b8dac018f36cdc1e16042bb598c99885ecbf9
-
-
 
 ## Note
 This web app is in beta.
@@ -51,7 +55,6 @@ The rarity scores is roughly calculated as follows:
 [Rarity Score for a Trait Value] = 1 / ([Number of Items with that Trait Value] / [Total Number of Items in Collection])
 
 Additionally a bonus score is given to PPs that were 1/1s and specials.
-
 
 ### If you like this project, you may buy me a cup of coffee. ☕
 """)

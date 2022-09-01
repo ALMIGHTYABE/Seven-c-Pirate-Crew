@@ -3,7 +3,6 @@ import time
 
 import pandas as pd  # read csv, df manipulation
 import streamlit as st  # data web app development
-import toml
 import yaml
 from st_aggrid import AgGrid, GridOptionsBuilder
 from st_aggrid.shared import GridUpdateMode
@@ -28,23 +27,14 @@ def read_params(config_path):
 
 config = read_params(params_path)
 
-# # Theme
-# thememode = st.sidebar.checkbox('Dark Mode')
-# light = config["home"]["light"]
-# dark = config["home"]["dark"]
-#
-# if thememode:
-#     with open(".streamlit/config.toml", 'w') as f:
-#         toml.dump(dark, f)
-# else:
-#     with open(".streamlit/config.toml", 'w') as f:
-#         toml.dump(light, f)
-
 # Dashboard Logo & Title
 st.image("icons/piratelife.png", width=100)
 col1, col2 = st.columns(2)
 col1.title("Seven c Pirate Crew")
 col2.markdown('<div style="text-align: right;">Data is updated every 30 minutes</div>', unsafe_allow_html=True)
+
+# Sidebar Mint Info
+st.sidebar.info("Pirate Life Batch One: [Mint Now](https://app.hedgey.finance/#/nfts/)")
 
 # Select Button
 selection = st_btn_select(("Pixel Pirates", "Pirate Life"))
@@ -348,8 +338,9 @@ if selection == "Pirate Life":
             if missing_traits:
                 st.markdown("### Missing Traits")
                 # missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure", "Common", "Specials", "Legendary"],
-                                                     # default=pd.unique(df["Type"]))
-                missing_type_filter = st.multiselect("Pirate Life Type", pd.unique(df["Type"]), default=pd.unique(df["Type"]))
+                # default=pd.unique(df["Type"]))
+                missing_type_filter = st.multiselect("Pirate Life Type", pd.unique(df["Type"]),
+                                                     default=pd.unique(df["Type"]))
                 missing_df = df[df["Type"].isin(missing_type_filter)]
                 missing_nft_df = nft_df[nft_df["Type"].isin(missing_type_filter)]
 
