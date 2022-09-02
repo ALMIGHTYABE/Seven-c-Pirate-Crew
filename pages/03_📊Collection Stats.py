@@ -115,7 +115,6 @@ if selection == "Pixel Pirates":
         col6.metric("Volume Traded in FTM", volume_alltime)
 
         time.sleep(1)
-        st.experimental_rerun()
 
 # Pirate Life
 if selection == "Pirate Life":
@@ -196,4 +195,3 @@ if selection == "Pirate Life":
         col6.metric("Volume Traded in FTM", volume_alltime)
 
         time.sleep(1)
-        st.experimental_rerun()

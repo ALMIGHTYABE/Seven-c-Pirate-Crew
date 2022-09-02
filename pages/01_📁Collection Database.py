@@ -155,7 +155,6 @@ if selection == "Pixel Pirates":
             st.image(image_url.tolist(), caption=["# " + str(i) for i in image_number], width=200)  # Images
 
         time.sleep(1)
-        st.experimental_rerun()
 
 # Pirate Life
 if selection == "Pirate Life":
@@ -276,4 +275,3 @@ if selection == "Pirate Life":
             st.image(image_url.tolist(), caption=["# " + str(i) for i in image_number], width=200)  # Images
 
         time.sleep(1)
-        st.experimental_rerun()
