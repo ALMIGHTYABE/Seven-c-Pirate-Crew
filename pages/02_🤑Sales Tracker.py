@@ -174,6 +174,7 @@ if selection == "Pixel Pirates":
                 df.sort_values(by=['Rarity Score / FTM'], ascending=True, inplace=True)
                 st.write(df.to_html(escape=False, index=False), unsafe_allow_html=True)
             time.sleep(1)
+            st.experimental_rerun()
     else:
         col1, col2 = st.columns(2)
 
@@ -202,6 +203,8 @@ if selection == "Pixel Pirates":
             st.markdown("### Last 100 Sales")
             sales_hist.sort_values(by=['Date Sold'], ascending=False, inplace=True)
             st.write(sales_hist.head(100).to_html(escape=False, index=False), unsafe_allow_html=True)
+            time.sleep(1)
+            st.experimental_rerun()
 
 # Pirate Life
 if selection == "Pirate Life":
@@ -341,6 +344,7 @@ if selection == "Pirate Life":
                 df.sort_values(by=['Rarity Score / FTM'], ascending=True, inplace=True)
                 st.write(df.to_html(escape=False, index=False), unsafe_allow_html=True)
             time.sleep(1)
+            st.experimental_rerun()
     else:
         col1, col2 = st.columns(2)
 
@@ -369,3 +373,5 @@ if selection == "Pirate Life":
             st.markdown("### Last 100 Sales")
             sales_hist.sort_values(by=['Date Sold'], ascending=False, inplace=True)
             st.write(sales_hist.head(100).to_html(escape=False, index=False), unsafe_allow_html=True)
+            time.sleep(1)
+            st.experimental_rerun()

@@ -208,6 +208,7 @@ if selection == "Pixel Pirates":
                 pass
 
         time.sleep(1)
+        st.experimental_rerun()
 
 # Pirate Life
 if selection == "Pirate Life":
@@ -375,3 +376,4 @@ if selection == "Pirate Life":
                 pass
 
         time.sleep(1)
+        st.experimental_rerun()
