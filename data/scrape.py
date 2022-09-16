@@ -116,7 +116,7 @@ try:
         sales_hist['image'] = sales_hist['image'].apply(lambda x: '<img src=' + x + ' width="100">')
         sales_hist['Rarity Score / FTM'] = sales_hist['Total Score'] / sales_hist['price']
         sales_hist.to_csv("data/pirate life/history.csv", index=False)  # Save to CSV
-        log_writer.log(file_object, "Pirate Life Scrape Successful"
+        log_writer.log(file_object, "Pirate Life Scrape Successful")
 except Exception as e:
     log_writer.log(file_object,
                    "Error occurred while scraping Pirate Life for %s Error: %s" % e)
