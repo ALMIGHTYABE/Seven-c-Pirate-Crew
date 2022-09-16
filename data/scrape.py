@@ -9,7 +9,7 @@ import requests
 import yaml
 from web3 import Web3
 
-from ..application_logging import logger
+from .application_logging import logger
 
 file_name = "Scraper_Log_" + str(date.today()) + ".txt"
 file_path = os.path.join(os.getcwd(), "logs", file_name)
