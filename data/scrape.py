@@ -78,7 +78,7 @@ except Exception as e:
 
 # Pirate Life
 try:
-    log_writer.log(file_object, "Pixel Pirate Scrape Started")
+    log_writer.log(file_object, "Pirate Life Scrape Started")
 
     # NFT DATA
     life_df = pd.read_csv(config["traits"]["sheets_url"])
