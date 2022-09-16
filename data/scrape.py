@@ -2,18 +2,22 @@
 import os
 import time
 from datetime import date
-
+from pathlib import Path
 
 import pandas as pd
 import requests
 import yaml
 from web3 import Web3
 
-from .application_logging import logger
+from application_logging import logger
 
 file_name = "Scraper_Log_" + str(date.today()) + ".txt"
-file_path = os.path.join(os.getcwd(), "logs", file_name)
+file_path = Path("logs", file_name)
+os.makedirs(os.path.dirname(file_path), exist_ok=True)
 log_writer = logger.App_Logger()
+file_object = open(file_path, 'a+')
+log_writer = logger.App_Logger()
+
 params_path = "./params.yaml"
 
 
@@ -28,9 +32,6 @@ config = read_params(params_path)
 # Scrape Data and Save to CSV
 # Pixel Pirates
 try:
-    file_object = open(file_path, 'a+')
-    log_writer = logger.App_Logger()
-
     log_writer.log(file_object, "Pixel Pirate Scrape Started")
 
     # NFT DATA
@@ -77,9 +78,6 @@ except Exception as e:
 
 # Pirate Life
 try:
-    file_object = open(file_path, 'a+')
-    log_writer = logger.App_Logger()
-
     log_writer.log(file_object, "Pixel Pirate Scrape Started")
 
     # NFT DATA
