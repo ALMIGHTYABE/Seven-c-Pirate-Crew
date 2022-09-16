@@ -6,6 +6,11 @@ import requests
 import yaml
 from web3 import Web3
 
+from application_logging import logger
+
+file_name = "Scraper_Log_" + str(date.today()) + ".txt"
+file_path = os.path.join(os.getcwd(), "logs", file_name)
+log_writer = logger.App_Logger()
 params_path = "./params.yaml"
 
 
@@ -20,6 +25,11 @@ config = read_params(params_path)
 # Scrape Data and Save to CSV
 # Pixel Pirates
 try:
+    file_object = open(file_path, 'a+')
+    log_writer = logger.App_Logger()
+
+    log_writer.log(file_object, "Pixel Pirate Scrape Started")
+
     # NFT DATA
     ppnos = pd.read_csv(config["scrape1"]["sheets_url"])
     nft_df = pd.read_csv(config["scrape1"]["traits"])
@@ -57,14 +67,18 @@ try:
         sales_hist['image'] = sales_hist['image'].apply(lambda x: '<img src=' + x + ' width="100">')
         sales_hist['Rarity Score / FTM'] = sales_hist['Total Score'] / sales_hist['price']
         sales_hist.to_csv("data/pixel pirates/history.csv", index=False)  # Save to CSV
-
-
-
+        log_writer.log(file_object, "Pixel Pirate Scrape Successful"
 except Exception as e:
-    error = {"error": e}
+    log_writer.log(file_object,
+                   "Error occurred while scraping Pixel Pirates for %s Error: %s" % e)
 
 # Pirate Life
 try:
+    file_object = open(file_path, 'a+')
+    log_writer = logger.App_Logger()
+
+    log_writer.log(file_object, "Pixel Pirate Scrape Started")
+
     # NFT DATA
     life_df = pd.read_csv(config["traits"]["sheets_url"])
     nft_df = pd.read_csv(config["scrape2"]["traits"])
@@ -102,6 +116,7 @@ try:
         sales_hist['image'] = sales_hist['image'].apply(lambda x: '<img src=' + x + ' width="100">')
         sales_hist['Rarity Score / FTM'] = sales_hist['Total Score'] / sales_hist['price']
         sales_hist.to_csv("data/pirate life/history.csv", index=False)  # Save to CSV
-
+        log_writer.log(file_object, "Pixel Pirate Scrape Successful"
 except Exception as e:
-    error = {"error": e}
+    log_writer.log(file_object,
+                   "Error occurred while scraping Pirate Life for %s Error: %s" % e)
