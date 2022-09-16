@@ -1,6 +1,8 @@
 # Import Packages
+import os
 import time
-import date
+from datetime import date
+
 
 import pandas as pd
 import requests
