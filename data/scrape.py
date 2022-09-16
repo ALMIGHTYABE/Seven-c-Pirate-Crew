@@ -74,7 +74,7 @@ try:
         log_writer.log(file_object, "Pixel Pirate Scrape Successful")
 except Exception as e:
     log_writer.log(file_object,
-                   "Error occurred while scraping Pixel Pirates for %s Error: %s" % e)
+                   "Error occurred while scraping Pixel Pirates for Error: %s" % e)
 
 # Pirate Life
 try:
@@ -120,4 +120,4 @@ try:
         log_writer.log(file_object, "Pirate Life Scrape Successful")
 except Exception as e:
     log_writer.log(file_object,
-                   "Error occurred while scraping Pirate Life for %s Error: %s" % e)
+                   "Error occurred while scraping Pirate Life for Error: %s" %e)
