@@ -110,7 +110,7 @@ except Exception as e:
 
 # Save to CSV
 try:
-    log_writer.log(file_object, "Pixel Pirates Traits to CSV")
+    log_writer.log(file_object, "Pixel Pirates Traits to CSV Started")
     nft_df.to_csv("data/pixel pirates/traits.csv", index=False)
     log_writer.log(file_object, "Pixel Pirates Traits to CSV Successful")
 except Exception as e:
@@ -193,7 +193,7 @@ except Exception as e:
 
 # Save to CSV
 try:
-    log_writer.log(file_object, "Pirate Life Traits to CSV")
+    log_writer.log(file_object, "Pirate Life Traits to CSV Started")
     nft_df.to_csv("data/pirate life/traits.csv", index=False)
     log_writer.log(file_object, "Pirate Life Traits to CSV Successful")
 except Exception as e:
