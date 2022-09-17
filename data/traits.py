@@ -1,6 +1,5 @@
 # Import Packages
 import os
-import time
 from datetime import date
 from pathlib import Path
 
@@ -95,8 +94,10 @@ try:
 
     nft_df['Total Score'] = nft_df[score_list].sum(axis=1)  # Summation of Scores
 
+    nft_df['Rank'] = nft_df['Total Score'].rank(ascending=False)
+
     nft_df = nft_df.reindex(
-        columns=['name', 'number', 'image', 'date', 'Batch', 'Type', 'Total Score', 'Bonus Score', 'Background',
+        columns=['name', 'number', 'image', 'date', 'Batch', 'Type', 'Rank', 'Total Score', 'Bonus Score', 'Background',
                  'Background Score', 'Base', 'Base Score', 'Outfit', 'Outfit Score',
                  'Necklace', 'Necklace Score', 'Eye', 'Eye Score', 'Beard', 'Beard Score', 'Hair', 'Hair Score', 'Hat',
                  'Hat Score', 'Hand_Accessories', 'Hand_Accessories Score', 'Shoulder', 'Shoulder Score', 'Mouth',
