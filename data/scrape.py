@@ -35,7 +35,7 @@ try:
     log_writer.log(file_object, "Pixel Pirate Scrape Started")
 
     # NFT DATA
-    ppnos = pd.read_csv(config["scrape1"]["sheets_url"])
+    ppnos = pd.read_csv(config["traits"]["pixel_pirates_sheets_url"])
     nft_df = pd.read_csv(config["scrape1"]["traits"])
 
     provider_url = config["scrape1"]["provider_url"]
@@ -81,7 +81,7 @@ try:
     log_writer.log(file_object, "Pirate Life Scrape Started")
 
     # NFT DATA
-    life_df = pd.read_csv(config["traits"]["sheets_url"])
+    life_df = pd.read_csv(config["traits"]["pirate_life_sheets_url"])
     nft_df = pd.read_csv(config["scrape2"]["traits"])
 
     provider_url = config["scrape2"]["provider_url"]
