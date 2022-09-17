@@ -34,3 +34,7 @@
 2022-09-17/08:23:16		Pixel Pirate Scrape Successful
 2022-09-17/08:23:16		Pirate Life Scrape Started
 2022-09-17/08:26:28		Pirate Life Scrape Successful
+2022-09-17/09:15:25		Pixel Pirate Scrape Started
+2022-09-17/09:19:50		Pixel Pirate Scrape Successful
+2022-09-17/09:19:50		Pirate Life Scrape Started
+2022-09-17/09:19:50		Error occurred while scraping Pirate Life for Error: 'sheets_url'
