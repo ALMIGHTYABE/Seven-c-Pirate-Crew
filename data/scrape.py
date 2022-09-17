@@ -47,6 +47,7 @@ try:
     contract_instance = w3.eth.contract(address=contract_address, abi=abi)
     wallet_address = []
     for i in nft_df["number"]:
+        print(i)
         wallet_address.append(contract_instance.functions.ownerOf(int(i)).call())
 
     nft_df["address"] = wallet_address  # Appending addresses to DF
@@ -93,6 +94,7 @@ try:
     contract_instance = w3.eth.contract(address=contract_address, abi=abi)
     wallet_address = []
     for i in nft_df["number"]:
+        print(i)
         wallet_address.append(contract_instance.functions.ownerOf(int(i)).call())
 
     nft_df["address"] = wallet_address  # Appending addresses to DF
