@@ -1,6 +1,14 @@
 traits:
-  sheets_url: https://docs.google.com/spreadsheets/d/1XsynBrX_z5uaB-_KtvWLo9J__P2-31HDqO1ATV13VLk/export?format=csv&gid=0
-  hedgey_url: https://nft.hedgey.finance/fantom/0xb75b8dac018f36cdc1e16042bb598c99885ecbf9/
+  pixel_pirates_sheets_url: https://docs.google.com/spreadsheets/d/1jmClZmrgxSsw04rz8TZRarK2dWf7LdDoL0jaspsKIOA/export?format=csv&gid=0
+  pixel_pirates_hedgey_url: https://nft.hedgey.finance/fantom/0x2aa5d15eb36e5960d056e8fea6e7bb3e2a06a351/
+  pixel_pirate_manual_addition: { 'name': 'Pixel Pirates #6', 'number': 6,
+                     'image': 'https://nft.hedgey.finance/fantom/0x2aa5d15eb36e5960d056e8fea6e7bb3e2a06a351/6.png',
+                     'date': 1650726331992, 'Background': 'Purple', 'Base': 'Base_Pink', 'Outfit': 'Arm_Tattoo',
+                     'Necklace': 'None', 'Eye': 'None', 'Beard': 'None', 'Hair': 'White_Hair',
+                     'Hat': 'Pirate_Hat_Pink', 'Hand_Accessories': 'Handgun', 'Shoulder': 'Corgi_Dog',
+                     'Mouth': 'Regular_Smile', 'Unlock_Date': 1650844800 }
+  pirate_life_sheets_url: https://docs.google.com/spreadsheets/d/1XsynBrX_z5uaB-_KtvWLo9J__P2-31HDqO1ATV13VLk/export?format=csv&gid=0
+  pirate_life_hedgey_url: https://nft.hedgey.finance/fantom/0xb75b8dac018f36cdc1e16042bb598c99885ecbf9/
 
 scrape1:
   sheets_url: https://docs.google.com/spreadsheets/d/1jmClZmrgxSsw04rz8TZRarK2dWf7LdDoL0jaspsKIOA/export?format=csv&gid=0
