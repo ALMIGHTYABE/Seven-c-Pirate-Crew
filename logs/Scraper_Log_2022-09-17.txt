@@ -93,3 +93,7 @@
 2022-09-17/17:02:20		Error occurred while scraping Pixel Pirates for Error: "['Rank'] not in index"
 2022-09-17/17:02:20		Pirate Life Scrape Started
 2022-09-17/17:02:20		Error occurred while scraping Pirate Life for Error: 'sheets_url'
+2022-09-17/17:25:50		Pixel Pirate Scrape Started
+2022-09-17/17:29:20		Error occurred while scraping Pixel Pirates for Error: "['Rank'] not in index"
+2022-09-17/17:29:20		Pirate Life Scrape Started
+2022-09-17/17:29:20		Error occurred while scraping Pirate Life for Error: 'sheets_url'
