@@ -101,3 +101,7 @@
 2022-09-17/17:48:23		Error occurred while scraping Pixel Pirates for Error: "['Rank'] not in index"
 2022-09-17/17:48:23		Pirate Life Scrape Started
 2022-09-17/17:48:23		Error occurred while scraping Pirate Life for Error: 'sheets_url'
+2022-09-17/17:52:04		Pixel Pirate Scrape Started
+2022-09-17/17:56:31		Error occurred while scraping Pixel Pirates for Error: "['Rank'] not in index"
+2022-09-17/17:56:31		Pirate Life Scrape Started
+2022-09-17/17:59:35		Error occurred while scraping Pirate Life for Error: execution reverted: ERC721: owner query for nonexistent token
