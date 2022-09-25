@@ -34,3 +34,7 @@
 2022-09-25/08:23:15		Pixel Pirate Scrape Successful
 2022-09-25/08:23:15		Pirate Life Scrape Started
 2022-09-25/08:25:55		Pirate Life Scrape Successful
+2022-09-25/08:48:39		Pixel Pirate Scrape Started
+2022-09-25/08:49:58		Error occurred while scraping Pixel Pirates for Error: 500 Server Error: Internal Server Error for url: https://rpc.ankr.com/fantom
+2022-09-25/08:49:58		Pirate Life Scrape Started
+2022-09-25/08:53:29		Pirate Life Scrape Successful
