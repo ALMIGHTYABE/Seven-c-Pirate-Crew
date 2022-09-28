@@ -74,3 +74,7 @@
 2022-09-28/16:30:37		Error occurred while scraping Pixel Pirates for Error: {'code': -32603, 'message': 'internal error'}
 2022-09-28/16:30:37		Pirate Life Scrape Started
 2022-09-28/16:35:08		Pirate Life Scrape Successful
+2022-09-28/17:19:25		Pixel Pirate Scrape Started
+2022-09-28/17:25:26		Pixel Pirate Scrape Successful
+2022-09-28/17:25:26		Pirate Life Scrape Started
+2022-09-28/17:29:50		Error occurred while scraping Pirate Life for Error: 500 Server Error: Internal Server Error for url: https://rpc.ankr.com/fantom
