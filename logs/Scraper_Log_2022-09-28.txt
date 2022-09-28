@@ -22,3 +22,7 @@
 2022-09-28/08:26:46		Pixel Pirate Scrape Successful
 2022-09-28/08:26:46		Pirate Life Scrape Started
 2022-09-28/08:29:21		Pirate Life Scrape Successful
+2022-09-28/08:57:29		Pixel Pirate Scrape Started
+2022-09-28/09:02:19		Pixel Pirate Scrape Successful
+2022-09-28/09:02:19		Pirate Life Scrape Started
+2022-09-28/09:05:36		Error occurred while scraping Pirate Life for Error: {'code': -32603, 'message': 'internal error'}
