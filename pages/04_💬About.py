@@ -12,8 +12,8 @@ st.set_page_config(
 st.title("💬 About")
 
 # Sidebar Mint Info
-st.sidebar.info("Pirate Life Batch Two: [Mint Now](https://app.hedgey.finance/#/nfts/)")
-# st.sidebar.info("Pirate Life Batch Two: Minted Out!")
+st.sidebar.info("Pirate Life Batch Three: [Mint Now](https://app.hedgey.finance/#/nfts/)")
+# st.sidebar.info("Pirate Life Batch Three: Minted Out!")
 
 # Content
 st.write("""## What is Seven c Pirate Crew?
