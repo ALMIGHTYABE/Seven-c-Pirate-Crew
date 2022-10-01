@@ -129,7 +129,6 @@ if selection == "Pixel Pirates":
             df,
             enable_enterprise_modules=True,
             gridOptions=options.build(),
-            theme="light",
             update_mode=GridUpdateMode.MODEL_CHANGED,
             allow_unsafe_jscode=True,
         )
@@ -249,7 +248,6 @@ if selection == "Pirate Life":
             df,
             enable_enterprise_modules=True,
             gridOptions=options.build(),
-            theme="light",
             update_mode=GridUpdateMode.MODEL_CHANGED,
             allow_unsafe_jscode=True,
         )
