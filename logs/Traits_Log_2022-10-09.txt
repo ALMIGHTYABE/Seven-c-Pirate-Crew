@@ -54,3 +54,11 @@
 2022-10-09/08:16:14		Pirate Life Traits Scrape Successful
 2022-10-09/08:16:14		Pirate Life Traits to CSV Started
 2022-10-09/08:16:14		Pirate Life Traits to CSV Successful
+2022-10-09/09:13:24		Pixel Pirate Traits Scrape Started
+2022-10-09/09:13:36		Error occurred while scraping Traits for Pixel Pirates for Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2022-10-09/09:13:36		Pixel Pirates Traits to CSV Started
+2022-10-09/09:13:36		Error occurred while writing Pixel Pirates Traits to CSV Error: name 'nft_df' is not defined
+2022-10-09/09:13:36		Pirate Life Traits Scrape Started
+2022-10-09/09:13:37		Error occurred while scraping Traits for Pirate Life for Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2022-10-09/09:13:37		Pirate Life Traits to CSV Started
+2022-10-09/09:13:37		Error occurred while writing Pirate Life Traits to CSV Error: name 'nft_df' is not defined
