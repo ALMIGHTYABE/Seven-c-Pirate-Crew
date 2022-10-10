@@ -82,3 +82,7 @@
 2022-10-10/19:45:39		Error occurred while scraping Pixel Pirates for Error: 522 Server Error:  for url: https://rpc.ankr.com/fantom
 2022-10-10/19:45:39		Pirate Life Scrape Started
 2022-10-10/19:45:53		Error occurred while scraping Pirate Life for Error: 522 Server Error:  for url: https://rpc.ankr.com/fantom
+2022-10-10/20:18:56		Pixel Pirate Scrape Started
+2022-10-10/20:23:21		Pixel Pirate Scrape Successful
+2022-10-10/20:23:21		Pirate Life Scrape Started
+2022-10-10/20:28:00		Pirate Life Scrape Successful
