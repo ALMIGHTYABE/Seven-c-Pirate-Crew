@@ -37,3 +37,7 @@
 2022-10-26/08:23:05		Error occurred while scraping Pixel Pirates for Error: 'DataFrame' object has no attribute 'price'
 2022-10-26/08:23:05		Pirate Life Scrape Started
 2022-10-26/08:26:41		Error occurred while scraping Pirate Life for Error: 'DataFrame' object has no attribute 'price'
+2022-10-26/08:47:57		Pixel Pirate Scrape Started
+2022-10-26/08:51:58		Pixel Pirate Scrape Successful
+2022-10-26/08:51:58		Pirate Life Scrape Started
+2022-10-26/08:56:07		Pirate Life Scrape Successful
