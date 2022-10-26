@@ -97,3 +97,7 @@
 2022-10-26/17:50:41		Pixel Pirate Scrape Successful
 2022-10-26/17:50:41		Pirate Life Scrape Started
 2022-10-26/17:55:13		Pirate Life Scrape Successful
+2022-10-26/18:19:44		Pixel Pirate Scrape Started
+2022-10-26/18:22:10		Error occurred while scraping Pixel Pirates for Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2022-10-26/18:22:10		Pirate Life Scrape Started
+2022-10-26/18:25:10		Error occurred while scraping Pirate Life for Error: HTTPSConnectionPool(host='rpc.ankr.com', port=443): Read timed out. (read timeout=10)
