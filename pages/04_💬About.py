@@ -27,7 +27,7 @@ Treasure hunts will continue and new pirate gems will be unearthed. Are you an o
 This was created by me aka 🍓ALMIGHTY ABE🍓 to help Seven c Pirate Crew holders to view their collection, check out the various attributes they hold, follow sales on Secondary, and more.
 
 ## Important Links
-My Twitter: https://twitter.com/KingAbraham69
+My Twitter: https://twitter.com/ALM1GHTYABE
 
 Hoeem's Twitter: https://twitter.com/crypthoem/
 
