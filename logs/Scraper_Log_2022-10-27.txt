@@ -58,3 +58,7 @@
 2022-10-27/10:49:29		Pixel Pirate Scrape Successful
 2022-10-27/10:49:29		Pirate Life Scrape Started
 2022-10-27/10:54:01		Pirate Life Scrape Successful
+2022-10-27/11:38:38		Pixel Pirate Scrape Started
+2022-10-27/11:42:13		Pixel Pirate Scrape Successful
+2022-10-27/11:42:13		Pirate Life Scrape Started
+2022-10-27/11:42:43		Error occurred while scraping Pirate Life for Error: HTTP Error 400: Bad Request
