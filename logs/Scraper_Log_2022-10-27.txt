@@ -50,3 +50,7 @@
 2022-10-27/09:47:33		Pixel Pirate Scrape Successful
 2022-10-27/09:47:33		Pirate Life Scrape Started
 2022-10-27/09:51:04		Error occurred while scraping Pirate Life for Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2022-10-27/10:17:04		Pixel Pirate Scrape Started
+2022-10-27/10:20:43		Pixel Pirate Scrape Successful
+2022-10-27/10:20:43		Pirate Life Scrape Started
+2022-10-27/10:24:36		Pirate Life Scrape Successful
