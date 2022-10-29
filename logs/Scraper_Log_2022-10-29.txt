@@ -70,3 +70,7 @@
 2022-10-29/12:31:58		Pixel Pirate Scrape Successful
 2022-10-29/12:31:58		Pirate Life Scrape Started
 2022-10-29/12:32:15		Error occurred while scraping Pirate Life for Error: {'code': 0, 'message': "we can't execute this request"}
+2022-10-29/13:06:35		Pixel Pirate Scrape Started
+2022-10-29/13:10:28		Pixel Pirate Scrape Successful
+2022-10-29/13:10:28		Pirate Life Scrape Started
+2022-10-29/13:14:39		Pirate Life Scrape Successful
