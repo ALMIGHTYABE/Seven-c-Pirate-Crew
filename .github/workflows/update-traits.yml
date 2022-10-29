@@ -1,7 +1,6 @@
 name: Update Traits
 on:
   schedule:
-    - cron: '*/60 * * * *'
   workflow_dispatch:
 
 jobs:
