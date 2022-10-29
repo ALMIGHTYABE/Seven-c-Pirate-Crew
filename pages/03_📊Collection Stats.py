@@ -56,28 +56,27 @@ if selection == "Pixel Pirates":
     r = requests.get(pixel_pirate_stats)
     stats = r.json()
     stats_df = pd.json_normalize(stats)
-    columns_with_nos = ['collection.stats.averagePrice', 'collection.stats.floor', 'collection.stats.lastSellPrice',
-                        'collection.stats.totalVolumeTraded', 'collection.stats.volumeLast24Hours',
+    columns_with_nos = ['collection.stats.averagePrice',
+                        'collection.stats.floor',
+                        'collection.stats.lastSellPrice',
+                        'collection.stats.totalVolumeTraded',
                         'collection.stats.volumeLast7Days',
-                        'collection.stats.sale.volumeLast24Hours',
-                        'collection.stats.sale.volumeLast7Days',
-                        'collection.stats.sale.totalVolumeTraded', 'collection.stats.sale.totalVolumeTradedFTM',
-                        'collection.stats.floorCap',
-                        'collection.stats.floorFTM', 'collection.stats.lastSellPriceFTM',
-                        'collection.stats.totalVolumeTradedFTM']
+                        'collection.stats.volumeLast24Hours',
+                        'collection.stats.floorCap']
     for i in columns_with_nos:
+        print(i)
         stats_df[i] = stats_df[i].apply(lambda x: int(x) / 1000000000000000000)  # Format Conversion
 
     # Getting data ready
     unique_holders = len(nft_df.address.unique())  # Unique PP Holders
     nft_floor = stats_df['collection.stats.floor'][0]  # PP Floor
     number_of_nft = len(nft_df)  # Number of PPs
-    number_of_active_sales = stats_df['collection.stats.sale.numActiveSales'][0]  # Number of Active Sales
-    number_of_trades_24hr = stats_df['collection.stats.sale.numTradesLast24Hours'][0]  # Number of Trades Last 24 Hours
+    number_of_active_sales = stats_df['collection.stats.activeSales'][0]  # Number of Active Sales
+    number_of_trades_24hr = stats_df['collection.stats.numTradesLast24Hours'][0]  # Number of Trades Last 24 Hours
     volume_24hr = stats_df['collection.stats.volumeLast24Hours'][0]  # Volume Last 24 Hours
-    number_of_trades_7d = stats_df['collection.stats.sale.numTradesLast7Days'][0]  # Number of Trades Last 7 Days
+    number_of_trades_7d = stats_df['collection.stats.numTradesLast7Days'][0]  # Number of Trades Last 7 Days
     volume_7d = stats_df['collection.stats.volumeLast7Days'][0]  # Volume Last 7 Days
-    number_of_trades_alltime = stats_df['collection.stats.sale.totalTrades'][0]  # Total Number of Sales
+    number_of_trades_alltime = stats_df['collection.stats.totalTrades'][0]  # Total Number of Sales
     volume_alltime = stats_df['collection.stats.totalVolumeTraded'][0]  # Total Volume Traded
 
     # creating a single-element container
@@ -136,15 +135,13 @@ if selection == "Pirate Life":
     r = requests.get(pirate_life_stats)
     stats = r.json()
     stats_df = pd.json_normalize(stats)
-    columns_with_nos = ['collection.stats.averagePrice', 'collection.stats.floor', 'collection.stats.lastSellPrice',
-                        'collection.stats.totalVolumeTraded', 'collection.stats.volumeLast24Hours',
+    columns_with_nos = ['collection.stats.averagePrice',
+                        'collection.stats.floor',
+                        'collection.stats.lastSellPrice',
+                        'collection.stats.totalVolumeTraded',
                         'collection.stats.volumeLast7Days',
-                        'collection.stats.sale.volumeLast24Hours',
-                        'collection.stats.sale.volumeLast7Days',
-                        'collection.stats.sale.totalVolumeTraded', 'collection.stats.sale.totalVolumeTradedFTM',
-                        'collection.stats.floorCap',
-                        'collection.stats.floorFTM', 'collection.stats.lastSellPriceFTM',
-                        'collection.stats.totalVolumeTradedFTM']
+                        'collection.stats.volumeLast24Hours',
+                        'collection.stats.floorCap']
     for i in columns_with_nos:
         stats_df[i] = stats_df[i].apply(lambda x: int(x) / 1000000000000000000)  # Format Conversion
 
@@ -152,12 +149,12 @@ if selection == "Pirate Life":
     unique_holders = len(nft_df.address.unique())  # Unique PP Holders
     nft_floor = stats_df['collection.stats.floor'][0]  # PP Floor
     number_of_nft = len(nft_df)  # Number of PPs
-    number_of_active_sales = stats_df['collection.stats.sale.numActiveSales'][0]  # Number of Active Sales
-    number_of_trades_24hr = stats_df['collection.stats.sale.numTradesLast24Hours'][0]  # Number of Trades Last 24 Hours
+    number_of_active_sales = stats_df['collection.stats.activeSales'][0]  # Number of Active Sales
+    number_of_trades_24hr = stats_df['collection.stats.numTradesLast24Hours'][0]  # Number of Trades Last 24 Hours
     volume_24hr = stats_df['collection.stats.volumeLast24Hours'][0]  # Volume Last 24 Hours
-    number_of_trades_7d = stats_df['collection.stats.sale.numTradesLast7Days'][0]  # Number of Trades Last 7 Days
+    number_of_trades_7d = stats_df['collection.stats.numTradesLast7Days'][0]  # Number of Trades Last 7 Days
     volume_7d = stats_df['collection.stats.volumeLast7Days'][0]  # Volume Last 7 Days
-    number_of_trades_alltime = stats_df['collection.stats.sale.totalTrades'][0]  # Total Number of Sales
+    number_of_trades_alltime = stats_df['collection.stats.totalTrades'][0]  # Total Number of Sales
     volume_alltime = stats_df['collection.stats.totalVolumeTraded'][0]  # Total Volume Traded
 
     # creating a single-element container
