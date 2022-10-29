@@ -1,6 +1,5 @@
 name: Update Traits
 on:
-  schedule:
   workflow_dispatch:
 
 jobs:
