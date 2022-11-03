@@ -121,3 +121,7 @@
 2022-11-03/19:38:57		Error occurred while scraping Pixel Pirates for Error: {'code': 0, 'message': "we can't execute this request"}
 2022-11-03/19:38:57		Pirate Life Scrape Started
 2022-11-03/19:38:58		Error occurred while scraping Pirate Life for Error: {'code': 0, 'message': "we can't execute this request"}
+2022-11-03/20:13:26		Pixel Pirate Scrape Started
+2022-11-03/20:18:16		Pixel Pirate Scrape Successful
+2022-11-03/20:18:16		Pirate Life Scrape Started
+2022-11-03/20:20:11		Error occurred while scraping Pirate Life for Error: execution reverted: ERC721: owner query for nonexistent token
