@@ -141,3 +141,7 @@
 2022-11-03/22:17:59		Pixel Pirate Scrape Successful
 2022-11-03/22:17:59		Pirate Life Scrape Started
 2022-11-03/22:19:45		Error occurred while scraping Pirate Life for Error: execution reverted: ERC721: owner query for nonexistent token
+2022-11-03/22:38:44		Pixel Pirate Scrape Started
+2022-11-03/22:42:45		Pixel Pirate Scrape Successful
+2022-11-03/22:42:45		Pirate Life Scrape Started
+2022-11-03/22:43:29		Error occurred while scraping Pirate Life for Error: HTTPSConnectionPool(host='rpc.ankr.com', port=443): Read timed out. (read timeout=10)
