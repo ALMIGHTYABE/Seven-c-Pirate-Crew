@@ -42,3 +42,7 @@
 2022-11-14/08:23:09		Pixel Pirate Scrape Successful
 2022-11-14/08:23:09		Pirate Life Scrape Started
 2022-11-14/08:26:36		Pirate Life Scrape Successful
+2022-11-14/08:47:44		Pixel Pirate Scrape Started
+2022-11-14/08:50:48		Pixel Pirate Scrape Successful
+2022-11-14/08:50:48		Pirate Life Scrape Started
+2022-11-14/08:54:10		Pirate Life Scrape Successful
