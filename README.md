@@ -10,4 +10,4 @@ A Seven c Pirate Crew Dashboard that updates information frequently using Stream
 - View attribute data
 - Track active sales and sales history
 
-Web-App Link: https://seven-c-pirate-crew.herokuapp.com/
+Web-App Link: [https://7cpirate.streamlit.app/](https://7cpirate.streamlit.app/)
