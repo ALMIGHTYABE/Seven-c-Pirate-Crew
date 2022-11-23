@@ -1,6 +1,6 @@
 # Importing Libraries
 import time
-
+import requests
 import pandas as pd  # read csv, df manipulation
 import streamlit as st  # data web app development
 import yaml
@@ -39,6 +39,20 @@ st.sidebar.info("Pirate Life Batch Three: Minted Out!")
 
 # Select Button
 selection = st_btn_select(("Pixel Pirates", "Pirate Life"))
+
+# cLQDR Price
+params = {
+    'from': '0x814c66594a22404e101FEcfECac1012D8d75C156',
+    'to': '0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9',
+    'amount': '1000000000000000000',
+}
+try:
+    response = requests.get('https://router.firebird.finance/fantom/route', params=params)
+    cLQDR_ratio = int(response.json()['maxReturn']['paths'][0]['amountTo']) / 1000000000000000000
+    LQDR_price = response.json()['maxReturn']['tokens']['0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9']['price']
+    cLQDR_price = cLQDR_ratio*LQDR_price
+except Exception as e:
+    print(e)
 
 # Pixel Pirates
 if selection == "Pixel Pirates":
@@ -151,9 +165,9 @@ if selection == "Pixel Pirates":
     # Empty Placeholder Filled
     with placeholder.container():
         if address_filter:
-            # Number of NFTS
+            # Number of NFTs and value
             st.markdown("### Number of Pixel Pirates: {}".format(str(df.shape[0])))
-
+            st.markdown("### cLQDR Value: ${}".format(str(round((df.shape[0] * cLQDR_price),2))))
             # Image
             st.image(df["image"].tolist(), caption=["# " + str(i) for i in df["number"]], width=150)  # Images
 
@@ -320,8 +334,9 @@ if selection == "Pirate Life":
     # Empty Placeholder Filled
     with placeholder.container():
         if address_filter:
-            # Number of NFTS
+            # Number of NFTs and value
             st.markdown("### Number of Pirate Life: {}".format(str(df.shape[0])))
+            st.markdown("### cLQDR Value: ${}".format(str(round((df.shape[0] * 2 * cLQDR_price), 2))))
 
             # Image
             st.image(df["image"].tolist(), caption=["# " + str(i) for i in df["number"]], width=150)  # Images
