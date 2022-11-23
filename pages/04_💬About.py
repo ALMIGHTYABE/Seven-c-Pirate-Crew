@@ -57,6 +57,8 @@ The rarity scores is roughly calculated as follows:
 
 Additionally a bonus score is given to PPs that were 1/1s and specials.
 
+cLQDR Value is pulled from Firebird Swap API.
+
 ### If you like this project, you may buy me a cup of coffee. ☕
 """)
 st.code("0x5783Fb2f3d93364041d49097b66086703527AeaC")
