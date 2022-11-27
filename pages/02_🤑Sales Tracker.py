@@ -19,7 +19,7 @@ st.set_page_config(
 st.title("🤑 Sales Tracker")
 
 # Sidebar Mint Info
-st.sidebar.info("Pirate Life Batch Four: [Mint Now](https://app.hedgey.finance/#/nfts/)")
+st.sidebar.info("Pirate Life Batch Four: [Mint Now](https://v1.hedgey.finance/#/nfts/)")
 # st.sidebar.info("Pirate Life Batch Four: Minted Out!")
 
 # Params
