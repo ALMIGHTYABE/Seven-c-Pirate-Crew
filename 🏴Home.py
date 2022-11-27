@@ -166,8 +166,15 @@ if selection == "Pixel Pirates":
     with placeholder.container():
         if address_filter:
             # Number of NFTs and value
-            st.markdown("### Number of Pixel Pirates: {}".format(str(df.shape[0])))
-            st.markdown("### cLQDR Value: ${}".format(str(round((df.shape[0] * cLQDR_price),2))))
+            col1, col2, col3, col4, col5 = st.columns(5)
+
+            col1.metric("Total Number of NFTs", df.shape[0])
+            col2.metric("Number of Commons",df[df["Type"]=="Common"].shape[0])
+            col3.metric("Number of Specials",df[df["Type"]=="Specials"].shape[0])
+            col4.metric("Number of Legendaries",df[df["Type"]=="Legendary"].shape[0])
+            col5.metric("Value of cLQDR Locked", "$" + str(round((df.shape[0] * cLQDR_price), 2)))
+
+
             # Image
             st.image(df["image"].tolist(), caption=["# " + str(i) for i in df["number"]], width=150)  # Images
 
@@ -335,8 +342,14 @@ if selection == "Pirate Life":
     with placeholder.container():
         if address_filter:
             # Number of NFTs and value
-            st.markdown("### Number of Pirate Life: {}".format(str(df.shape[0])))
-            st.markdown("### cLQDR Value: ${}".format(str(round((df.shape[0] * 2 * cLQDR_price), 2))))
+            col1, col2, col3, col4, col5 = st.columns(5)
+
+            col1.metric("Total Number of NFTs", df.shape[0])
+            col2.metric("Number of Commons",df[df["Type"]=="Common"].shape[0])
+            col3.metric("Number of Stories",df[df["Type"]=="Story"].shape[0])
+            col4.metric("Number of Treasures",df[df["Type"]=="Treasure"].shape[0])
+            col5.metric("Value of cLQDR Locked", "$" + str(round((df.shape[0] * 2 * cLQDR_price), 2)))
+
 
             # Image
             st.image(df["image"].tolist(), caption=["# " + str(i) for i in df["number"]], width=150)  # Images
