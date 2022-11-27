@@ -10,3 +10,7 @@
 2022-11-27/16:41:57		Error occurred while scraping Traits for Pirate Life for Error: ('Connection aborted.', OSError(107, 'Transport endpoint is not connected'))
 2022-11-27/16:41:57		Pirate Life Traits to CSV Started
 2022-11-27/16:41:57		Error occurred while writing Pirate Life Traits to CSV Error: name 'nft_df' is not defined
+2022-11-27/16:47:37		Pirate Life Traits Scrape Started
+2022-11-27/16:50:07		Pirate Life Traits Scrape Successful
+2022-11-27/16:50:07		Pirate Life Traits to CSV Started
+2022-11-27/16:50:07		Pirate Life Traits to CSV Successful
