@@ -373,17 +373,6 @@ if selection == "Pirate Life":
                 df[['number', 'Batch', 'Type', 'Rank', 'Total Score', 'Background', 'Skin', 'Body',
                     'Eyes', 'Weapon', 'Necklace', 'Eye Patch', 'Hair', 'Hat', 'Mouth', 'Pet']])
 
-            # Filtered Missing Traits
-            missing_traits = st.checkbox('See Missing Traits')
-            if missing_traits:
-                st.markdown("### Missing Traits")
-                # missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure", "Common", "Specials", "Legendary"],
-                # default=pd.unique(df["Type"]))
-                missing_type_filter = st.multiselect("Pirate Life Type", pd.unique(df["Type"]),
-                                                     default=pd.unique(df["Type"]))
-                missing_df = df[df["Type"].isin(missing_type_filter)]
-                missing_nft_df = nft_df[nft_df["Type"].isin(missing_type_filter)]
-
             # Batch Wise Info
             batch_count = st.checkbox('See Batchwise Count')
             if batch_count:
@@ -397,6 +386,17 @@ if selection == "Pirate Life":
                 # col6.metric("Batch 6", df[df["Batch"] == 6].shape[0])
             else:
                 pass
+            
+            # Filtered Missing Traits
+            missing_traits = st.checkbox('See Missing Traits')
+            if missing_traits:
+                st.markdown("### Missing Traits")
+                # missing_type_filter = st.multiselect("Pirate Life Type", ["Treaure", "Common", "Specials", "Legendary"],
+                # default=pd.unique(df["Type"]))
+                missing_type_filter = st.multiselect("Pirate Life Type", pd.unique(df["Type"]),
+                                                     default=pd.unique(df["Type"]))
+                missing_df = df[df["Type"].isin(missing_type_filter)]
+                missing_nft_df = nft_df[nft_df["Type"].isin(missing_type_filter)]
                 
                 # Finding Missing Traits
                 background_missing = [i for i in pd.unique(missing_nft_df["Background"]) if
