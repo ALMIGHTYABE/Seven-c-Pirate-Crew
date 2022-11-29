@@ -120,8 +120,7 @@ if selection == "Pixel Pirates":
         Returns:
             dict: The selected row
         """
-        options = GridOptionsBuilder.from_dataframe(df, enableRowGroup=True, enableValue=True, enablePivot=True,
-                                                    autoHeight=True)
+        options = GridOptionsBuilder.from_dataframe(df, enableRowGroup=True, enableValue=True, enablePivot=True)
         options.configure_side_bar(filters_panel=True)
         options.configure_selection(selection_mode="multiple", rowMultiSelectWithClick=True)
 
@@ -239,8 +238,7 @@ if selection == "Pirate Life":
         Returns:
             dict: The selected row
         """
-        options = GridOptionsBuilder.from_dataframe(df, enableRowGroup=True, enableValue=True, enablePivot=True,
-                                                    autoHeight=True)
+        options = GridOptionsBuilder.from_dataframe(df, enableRowGroup=True, enableValue=True, enablePivot=True)
         options.configure_side_bar(filters_panel=True)
         options.configure_selection(selection_mode="multiple", rowMultiSelectWithClick=True)
 
