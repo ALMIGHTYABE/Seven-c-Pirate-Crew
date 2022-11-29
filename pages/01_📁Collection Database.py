@@ -249,6 +249,7 @@ if selection == "Pirate Life":
             gridOptions=options.build(),
             update_mode=GridUpdateMode.MODEL_CHANGED,
             allow_unsafe_jscode=True,
+            height=400
         )
 
         return selection
