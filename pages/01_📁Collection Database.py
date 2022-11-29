@@ -130,7 +130,7 @@ if selection == "Pixel Pirates":
             gridOptions=options.build(),
             update_mode=GridUpdateMode.MODEL_CHANGED,
             allow_unsafe_jscode=True,
-            height=800
+            height=400
         )
 
         return selection
