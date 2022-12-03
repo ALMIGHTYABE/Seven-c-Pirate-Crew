@@ -177,7 +177,14 @@ if selection == "Pixel Pirates":
 
             # Image
             st.image(df["image"].tolist(), caption=["# " + str(i) for i in df["number"]], width=150)  # Images
-
+            
+            # Filtered Table
+            st.markdown("### Pixel Pirate Data")
+            selection = aggrid_interactive_table(
+                df[['number', 'Batch', 'Type', 'Rank', 'Total Score', 'Background', 'Base', 'Outfit',
+                    'Necklace', 'Eye', 'Beard', 'Hair', 'Hat', 'Hand_Accessories', 'Shoulder',
+                    'Mouth']])
+            
             # Batch Wise Info
             batch_count = st.checkbox('See Batchwise Count')
             if batch_count:
@@ -191,13 +198,6 @@ if selection == "Pixel Pirates":
             else:
                 pass
             
-            # Filtered Table
-            st.markdown("### Pixel Pirate Data")
-            selection = aggrid_interactive_table(
-                df[['number', 'Batch', 'Type', 'Rank', 'Total Score', 'Background', 'Base', 'Outfit',
-                    'Necklace', 'Eye', 'Beard', 'Hair', 'Hat', 'Hand_Accessories', 'Shoulder',
-                    'Mouth']])
-
             # Filtered Missing Traits
             missing_traits = st.checkbox('See Missing Traits')
             if missing_traits:
