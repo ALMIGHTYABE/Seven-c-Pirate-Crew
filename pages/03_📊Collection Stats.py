@@ -90,7 +90,11 @@ if selection == "Pixel Pirates":
         col3.metric("Collection Floor in FTM", nft_floor)
         col4.metric("Number of Active Sales", number_of_active_sales)
 
-        dfg = nft_df['address'].value_counts().reset_index().sort_values('address', ascending=False)
+        # dfg = nft_df['address'].value_counts().reset_index().sort_values('address', ascending=False).head(10)
+        dfg = nft_df['address'].value_counts().reset_index()
+        dfg['index'].astype(str)
+        dfg = dfg.sort_values('address', ascending=False).head(10)
+        print(dfg)
         dfg['index'] = [i[:6] for i in dfg['index']]
         fig = px.bar(dfg, x='address', y='index', labels={"address": "Number of NFTs", "index": "Holders"},
                      text='address')
