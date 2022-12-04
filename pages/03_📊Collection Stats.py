@@ -64,7 +64,6 @@ if selection == "Pixel Pirates":
                         'collection.stats.volumeLast24Hours',
                         'collection.stats.floorCap']
     for i in columns_with_nos:
-        print(i)
         stats_df[i] = stats_df[i].apply(lambda x: int(x) / 1000000000000000000)  # Format Conversion
 
     # Getting data ready
