@@ -365,10 +365,10 @@ if selection == "Pirate Life":
 
             fig = px.scatter(sales_hist, x='Date Sold', y='Price in FTM', color='Type', hover_name='Name',
                              hover_data=['Batch', 'Type', 'Rank', 'Rarity Score', 'Price in FTM', 'Rarity Score / FTM',
-                                         'Date Sold'])
+                                         'Date Sold'], category_orders={"Type": ["Common", "Story", "Treasure"]})
             fig.add_hline(y=67, line_width=2, line_dash='dot', line_color="green", annotation_text="Mint Price 67 FTM",
                           annotation_position="bottom right")
-            st.plotly_chart(fig, use_container_width=True, category_orders={"Type": ["Common", "Story", "Treasure"]})
+            st.plotly_chart(fig, use_container_width=True)
 
             st.markdown("### Last 100 Sales")
             sales_hist.sort_values(by=['Date Sold'], ascending=False, inplace=True)
