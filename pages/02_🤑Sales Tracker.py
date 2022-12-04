@@ -368,7 +368,7 @@ if selection == "Pirate Life":
                                          'Date Sold'])
             fig.add_hline(y=67, line_width=2, line_dash='dot', line_color="green", annotation_text="Mint Price 67 FTM",
                           annotation_position="bottom right")
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, use_container_width=True, category_orders={"Type": ["Common", "Story", "Treasure"]})
 
             st.markdown("### Last 100 Sales")
             sales_hist.sort_values(by=['Date Sold'], ascending=False, inplace=True)
