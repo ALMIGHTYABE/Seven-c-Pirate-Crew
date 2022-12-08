@@ -18,3 +18,7 @@
 2022-12-08/11:36:34		Error occurred while scraping Pixel Pirates for Error: 503 Server Error: Service Temporarily Unavailable for url: https://rpc.ankr.com/fantom
 2022-12-08/11:36:34		Pirate Life Scrape Started
 2022-12-08/11:37:23		Error occurred while scraping Pirate Life for Error: 503 Server Error: Service Temporarily Unavailable for url: https://rpc.ankr.com/fantom
+2022-12-08/12:24:08		Pixel Pirate Scrape Started
+2022-12-08/12:26:35		Error occurred while scraping Pixel Pirates for Error: execution reverted: ERC721: owner query for nonexistent token
+2022-12-08/12:26:35		Pirate Life Scrape Started
+2022-12-08/12:30:32		Pirate Life Scrape Successful
