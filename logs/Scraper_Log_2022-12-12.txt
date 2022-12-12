@@ -18,3 +18,7 @@
 2022-12-12/20:15:35		Error occurred while scraping Pixel Pirates for Error: execution reverted: ERC721: owner query for nonexistent token
 2022-12-12/20:15:35		Pirate Life Scrape Started
 2022-12-12/20:17:16		Error occurred while scraping Pirate Life for Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2022-12-12/21:11:56		Pixel Pirate Scrape Started
+2022-12-12/21:15:09		Error occurred while scraping Pixel Pirates for Error: execution reverted: ERC721: owner query for nonexistent token
+2022-12-12/21:15:09		Pirate Life Scrape Started
+2022-12-12/21:17:24		Error occurred while scraping Pirate Life for Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
