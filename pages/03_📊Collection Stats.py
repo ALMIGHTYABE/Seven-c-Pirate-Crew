@@ -19,8 +19,8 @@ st.set_page_config(
 st.title("📊 Collection Stats")
 
 # Sidebar Mint Info
-st.sidebar.info("Pirate Life Batch Four: [Mint Now](https://v1.hedgey.finance/#/nfts/)")
-# st.sidebar.info("Pirate Life Batch Four: Minted Out!")
+# st.sidebar.info("Pirate Life Batch Four: [Mint Now](https://v1.hedgey.finance/#/nfts/)")
+st.sidebar.info("Pirate Life Batch Four: Minted Out!")
 
 # Params
 params_path = "params.yaml"
