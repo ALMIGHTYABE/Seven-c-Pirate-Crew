@@ -174,7 +174,7 @@ if selection == "Pirate Life":
         fig = px.bar(dfg, x='address', y='index', labels={"address": "Number of NFTs", "index": "Holders"},
                      text='address')
         fig.update_layout(title="Top 10 NFT Whales", xaxis_title="Number of NFTs", yaxis_title="Holders",
-                          yaxis={'categoryorder': 'total ascending'})
+                          yaxis={'categoryorder': 'total ascending'}, yaxis_type='category')
         st.plotly_chart(fig, use_container_width=True)
 
         col1, col2, col3 = st.columns(3)
