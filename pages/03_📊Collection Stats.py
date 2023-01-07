@@ -172,6 +172,7 @@ if selection == "Pirate Life":
 
         dfg = nft_df['address'].value_counts().reset_index().sort_values('address', ascending=False).head(10)
         dfg['index'] = [i[:6] for i in dfg['index']]
+        print(type(dfg['address'][0]))
         fig = px.bar(dfg, x='address', y='index', labels={"address": "Number of NFTs", "index": "Holders"},
                      text='address')
         fig.update_layout(title="Top 10 NFT Whales", xaxis_title="Number of NFTs", yaxis_title="Holders",
