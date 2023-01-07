@@ -56,8 +56,7 @@ if selection == "Pixel Pirates":
     r = requests.get(pixel_pirate_stats)
     stats = r.json()
     stats_df = pd.json_normalize(stats)
-    columns_with_nos = ['collection.stats.averagePrice',
-                        'collection.stats.floor',
+    columns_with_nos = ['collection.stats.floor',
                         'collection.stats.lastSellPrice',
                         'collection.stats.totalVolumeTraded',
                         'collection.stats.volumeLast7Days',
@@ -138,8 +137,7 @@ if selection == "Pirate Life":
     r = requests.get(pirate_life_stats)
     stats = r.json()
     stats_df = pd.json_normalize(stats)
-    columns_with_nos = ['collection.stats.averagePrice',
-                        'collection.stats.floor',
+    columns_with_nos = ['collection.stats.floor',
                         'collection.stats.lastSellPrice',
                         'collection.stats.totalVolumeTraded',
                         'collection.stats.volumeLast7Days',
