@@ -382,8 +382,8 @@ if selection == "Pirate Life":
                 col3.metric("Batch 2", df[df["Batch"] == "2"].shape[0])
                 col4.metric("Batch 3", df[df["Batch"] == "3"].shape[0])
                 col5.metric("Batch 4", df[df["Batch"] == "4"].shape[0])
-                col6.metric("Batch 5", df[df["Batch"] == 5].shape[0])
-                # col7.metric("Batch 6", df[df["Batch"] == 6].shape[0])
+                col6.metric("Batch 5", df[df["Batch"] == "5"].shape[0])
+                # col7.metric("Batch 6", df[df["Batch"] == "6"].shape[0])
             else:
                 pass
             
