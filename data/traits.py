@@ -74,8 +74,8 @@ try:
         ex.map(ppscrape, pp_df['Number'])
 
     nft_df = pd.DataFrame(nft_list)  # List to df
-    nft_df['Batch'] = pp_df['Batch']  # Appending Batch Number to DF
-    nft_df['Type'] = pp_df['Type']  # Appending Type to DF
+    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
+    nft_df = nft_df.merge(pp_df, left_on='number', right_on='Number', how='left')  # Appending Batch Number and Type to DF
 
     # Rarity Score Computation
     traits = ['Background', 'Base', 'Outfit', 'Necklace', 'Eye', 'Beard', 'Hair', 'Hat', 'Hand_Accessories', 'Shoulder',
@@ -107,8 +107,6 @@ try:
                  'Hat Score', 'Hand_Accessories', 'Hand_Accessories Score', 'Shoulder', 'Shoulder Score', 'Mouth',
                  'Mouth Score',
                  'Unlock_Date'])  # Ordering of Columns
-
-    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
 
     log_writer.log(file_object, "Pixel Pirate Traits Scrape Successful")
 except Exception as e:
@@ -163,8 +161,8 @@ try:
         ex.map(plscrape, life_df['Number'])
 
     nft_df = pd.DataFrame(nft_list)  # List to df
-    nft_df['Batch'] = life_df['Batch']  # Appending Batch Number to DF
-    nft_df['Type'] = life_df['Type']  # Appending Type to DF
+    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
+    nft_df = nft_df.merge(life_df, left_on='number', right_on='Number', how='left')  # Appending Batch Number and Type to DF
 
     # Rarity Score Computation
     traits = ['Background', 'Skin', 'Body', 'Eyes', 'Weapon', 'Necklace', 'Eye Patch', 'Hair', 'Hat', 'Mouth',
@@ -177,10 +175,6 @@ try:
             trait_score.append(score)
         name = i + " Score"
         nft_df[name] = trait_score
-
-    # nft_df['Bonus Score'] = 0  # Bonus Score based on NFT Type
-    # nft_df.loc[nft_df['Type'] == "Legendary", 'Bonus Score'] = 5000
-    # nft_df.loc[nft_df['Type'] == "Specials", 'Bonus Score'] = 2000
 
     score_list = ['Background Score', 'Skin Score', 'Body Score', 'Eyes Score', 'Weapon Score',
                   'Necklace Score', 'Eye Patch Score', 'Hair Score', 'Hat Score', 'Mouth Score', 'Pet Score']
@@ -195,8 +189,6 @@ try:
                  'Eyes', 'Eyes Score', 'Weapon', 'Weapon Score', 'Necklace', 'Necklace Score',
                  'Eye Patch', 'Eye Patch Score', 'Hair', 'Hair Score', 'Hat', 'Hat Score',
                  'Mouth', 'Mouth Score', 'Pet', 'Pet Score', 'Unlock_Date'])  # Ordering of Columns
-
-    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
 
     log_writer.log(file_object, "Pirate Life Traits Scrape Successful")
 except Exception as e:
