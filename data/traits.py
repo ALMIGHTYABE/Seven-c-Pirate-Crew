@@ -113,14 +113,14 @@ config = read_params(params_path)
 #     log_writer.log(file_object,
 #                    "Error occurred while scraping Traits for Pixel Pirates for Error: %s" % e)
 
-# Save to CSV
-try:
-    log_writer.log(file_object, "Pixel Pirates Traits to CSV Started")
-    nft_df.to_csv("data/pixel pirates/traits.csv", index=False)
-    log_writer.log(file_object, "Pixel Pirates Traits to CSV Successful")
-except Exception as e:
-    log_writer.log(file_object,
-                   "Error occurred while writing Pixel Pirates Traits to CSV Error: %s" % e)
+# # Save to CSV
+# try:
+#     log_writer.log(file_object, "Pixel Pirates Traits to CSV Started")
+#     nft_df.to_csv("data/pixel pirates/traits.csv", index=False)
+#     log_writer.log(file_object, "Pixel Pirates Traits to CSV Successful")
+# except Exception as e:
+#     log_writer.log(file_object,
+#                    "Error occurred while writing Pixel Pirates Traits to CSV Error: %s" % e)
 
 # Pirate Life Traits
 # Scrape Data
