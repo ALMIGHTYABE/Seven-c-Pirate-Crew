@@ -43,6 +43,7 @@ try:
         nft = requests.get(hedgey_url + str(tokenID))
         # Status Code Check
         if nft.status_code == 200:
+            print(tokenID)
             # Name Check
             name = nft.json()['name']
             try:
@@ -50,7 +51,7 @@ try:
             except ValueError:
                 index = len(name)
             if name[:index].strip() == "Pixel Pirates":
-                number = name[index + 1:]
+                number = int(name[index + 1:])
                 image = nft.json()['image']
                 date = nft.json()['date']
                 Background = nft.json()['attributes'][0]['value']
@@ -107,6 +108,8 @@ try:
                  'Hat Score', 'Hand_Accessories', 'Hand_Accessories Score', 'Shoulder', 'Shoulder Score', 'Mouth',
                  'Mouth Score',
                  'Unlock_Date'])  # Ordering of Columns
+
+    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
 
     log_writer.log(file_object, "Pixel Pirate Traits Scrape Successful")
 except Exception as e:
@@ -193,6 +196,8 @@ try:
                  'Eyes', 'Eyes Score', 'Weapon', 'Weapon Score', 'Necklace', 'Necklace Score',
                  'Eye Patch', 'Eye Patch Score', 'Hair', 'Hair Score', 'Hat', 'Hat Score',
                  'Mouth', 'Mouth Score', 'Pet', 'Pet Score', 'Unlock_Date'])  # Ordering of Columns
+
+    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
 
     log_writer.log(file_object, "Pirate Life Traits Scrape Successful")
 except Exception as e:
