@@ -43,7 +43,6 @@ try:
         nft = requests.get(hedgey_url + str(tokenID))
         # Status Code Check
         if nft.status_code == 200:
-            print(tokenID)
             # Name Check
             name = nft.json()['name']
             try:
