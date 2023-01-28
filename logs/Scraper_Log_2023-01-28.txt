@@ -1,0 +1,4 @@
+2023-01-28/01:02:16		Pixel Pirate Scrape Started
+2023-01-28/01:02:53		Pixel Pirate Scrape Successful
+2023-01-28/01:02:53		Pirate Life Scrape Started
+2023-01-28/01:03:45		Pirate Life Scrape Successful
