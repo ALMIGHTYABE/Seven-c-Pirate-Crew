@@ -157,3 +157,7 @@
 2023-03-30/21:11:20		Pixel Pirate Scrape Successful
 2023-03-30/21:11:20		Pirate Life Scrape Started
 2023-03-30/21:12:08		Pirate Life Scrape Successful
+2023-03-30/21:35:23		Pixel Pirate Scrape Started
+2023-03-30/21:35:38		Pixel Pirate Scrape Successful
+2023-03-30/21:35:38		Pirate Life Scrape Started
+2023-03-30/21:35:45		Error occurred while scraping Pirate Life for Error: 'number'
