@@ -18,3 +18,7 @@
 2023-04-09/03:35:47		Pixel Pirate Scrape Successful
 2023-04-09/03:35:47		Pirate Life Scrape Started
 2023-04-09/03:35:54		Error occurred while scraping Pirate Life for Error: 'number'
+2023-04-09/04:13:36		Pixel Pirate Scrape Started
+2023-04-09/04:13:49		Pixel Pirate Scrape Successful
+2023-04-09/04:13:49		Pirate Life Scrape Started
+2023-04-09/04:17:50		Error occurred while scraping Pirate Life for Error: HTTP Error 400: Bad Request
