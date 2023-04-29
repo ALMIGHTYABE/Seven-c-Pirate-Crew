@@ -1,0 +1,4 @@
+2023-04-29/01:05:28		Pirate Life Traits Scrape Started
+2023-04-29/01:07:39		Pirate Life Traits Scrape Successful
+2023-04-29/01:07:39		Pirate Life Traits to CSV Started
+2023-04-29/01:07:39		Pirate Life Traits to CSV Successful
