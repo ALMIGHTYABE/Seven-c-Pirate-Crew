@@ -148,3 +148,7 @@
 2023-05-02/20:11:56		Error occurred while scraping Pixel Pirates for Error: HTTP Error 502: Bad Gateway
 2023-05-02/20:11:56		Pirate Life Scrape Started
 2023-05-02/20:12:11		Pirate Life Scrape Successful
+2023-05-02/20:35:46		Pixel Pirate Scrape Started
+2023-05-02/20:36:00		Pixel Pirate Scrape Successful
+2023-05-02/20:36:00		Pirate Life Scrape Started
+2023-05-02/20:36:09		Error occurred while scraping Pirate Life for Error: 'number'
