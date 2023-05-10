@@ -1,6 +1,6 @@
 # Import Packages
 import os
-from datetime import date
+import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -10,7 +10,9 @@ import concurrent.futures
 
 from application_logging import logger
 
-file_name = "Traits_Log_" + str(date.today()) + ".txt"
+today = datetime.datetime.now()
+
+file_name = "Scraper_Log_" + str(today.strftime("%B")) + "_" + str(today.year) + ".txt"
 file_path = Path("logs", file_name)
 os.makedirs(os.path.dirname(file_path), exist_ok=True)
 log_writer = logger.App_Logger()
