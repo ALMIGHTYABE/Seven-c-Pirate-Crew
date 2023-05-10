@@ -34,8 +34,8 @@ col1.title("Seven c Pirate Crew")
 col2.markdown('<div style="text-align: right;">Data is updated every 30 minutes</div>', unsafe_allow_html=True)
 
 # Sidebar Mint Info
-st.sidebar.info("Pirate Life Batch Five: [Mint Now](https://v1.hedgey.finance/#/nfts/)")
-# st.sidebar.info("Pirate Life Batch Five: Minted Out!")
+# st.sidebar.info("Pirate Life Batch Six: [Mint Now](https://v1.hedgey.finance/#/nfts/)")
+# st.sidebar.info("Pirate Life Batch Six: Minted Out!")
 
 # Select Button
 selection = st_btn_select(("Pixel Pirates", "Pirate Life"))
