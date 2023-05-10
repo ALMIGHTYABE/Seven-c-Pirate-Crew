@@ -31,7 +31,7 @@ config = read_params(params_path)
 st.image("icons/piratelife.png", width=100)
 col1, col2 = st.columns(2)
 col1.title("Seven c Pirate Crew")
-col2.markdown('<div style="text-align: right;">Data is updated every 30 minutes</div>', unsafe_allow_html=True)
+col2.markdown('<div style="text-align: right;">Data is updated every hour</div>', unsafe_allow_html=True)
 
 # Sidebar Mint Info
 # st.sidebar.info("Pirate Life Batch Six: [Mint Now](https://v1.hedgey.finance/#/nfts/)")
