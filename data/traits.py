@@ -17,7 +17,6 @@ file_path = Path("logs", file_name)
 os.makedirs(os.path.dirname(file_path), exist_ok=True)
 log_writer = logger.App_Logger()
 file_object = open(file_path, 'a+')
-log_writer = logger.App_Logger()
 
 params_path = "./params.yaml"
 
