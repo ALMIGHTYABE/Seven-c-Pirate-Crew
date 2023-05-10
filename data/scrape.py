@@ -8,7 +8,6 @@ import pandas as pd
 import requests
 import yaml
 from web3 import Web3
-import concurrent.futures
 
 from application_logging import logger
 
@@ -48,16 +47,11 @@ try:
 
     contract_instance = w3.eth.contract(address=contract_address, abi=abi)
     wallet_address = []
-    def ppaddress(tokenID):
-        print(tokenID)
-        wallet_address.append({'number' : tokenID, 'address' : contract_instance.functions.ownerOf(int(tokenID)).call()})
+    for i in nft_df["number"]:
+        print(i)
+        wallet_address.append(contract_instance.functions.ownerOf(int(i)).call())
 
-    with concurrent.futures.ThreadPoolExecutor() as ex:
-        ex.map(ppaddress, nft_df["number"])
-
-    wallet_df = pd.DataFrame(wallet_address)
-    nft_df = nft_df.merge(wallet_df, on='number', how='left')  # Appending addresses to DF
-    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
+    nft_df["address"] = wallet_address  # Appending addresses to DF
     nft_df.to_csv("data/pixel pirates/address.csv", index=False)  # Save to CSV
 
     # SALES DATA
@@ -100,16 +94,11 @@ try:
 
     contract_instance = w3.eth.contract(address=contract_address, abi=abi)
     wallet_address = []
-    def pladdress(tokenID):
-        print(tokenID)
-        wallet_address.append({'number' : tokenID, 'address' : contract_instance.functions.ownerOf(int(tokenID)).call()})
+    for i in nft_df["number"]:
+        print(i)
+        wallet_address.append(contract_instance.functions.ownerOf(int(i)).call())
 
-    with concurrent.futures.ThreadPoolExecutor() as ex:
-        ex.map(pladdress, nft_df["number"])
-
-    wallet_df = pd.DataFrame(wallet_address)
-    nft_df = nft_df.merge(wallet_df, on='number', how='left')  # Appending addresses to DF
-    nft_df.sort_values(by=['number'], ascending=True, inplace=True)
+    nft_df["address"] = wallet_address  # Appending addresses to DF
     nft_df.to_csv("data/pirate life/address.csv", index=False)  # Save to CSV
 
     # SALES DATA
