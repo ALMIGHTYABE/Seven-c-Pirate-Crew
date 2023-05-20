@@ -926,3 +926,7 @@
 2023-05-20/22:14:25		Pixel Pirate Scrape Successful
 2023-05-20/22:14:25		Pirate Life Scrape Started
 2023-05-20/22:19:23		Pirate Life Scrape Successful
+2023-05-20/23:12:35		Pixel Pirate Scrape Started
+2023-05-20/23:15:25		Pixel Pirate Scrape Successful
+2023-05-20/23:15:25		Pirate Life Scrape Started
+2023-05-20/23:19:07		Error occurred while scraping Pirate Life for Error: HTTPSConnectionPool(host='rpc.ankr.com', port=443): Read timed out. (read timeout=10)
