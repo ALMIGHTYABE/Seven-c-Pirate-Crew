@@ -954,3 +954,7 @@
 2023-05-21/06:17:53		Pixel Pirate Scrape Successful
 2023-05-21/06:17:53		Pirate Life Scrape Started
 2023-05-21/06:21:31		Pirate Life Scrape Successful
+2023-05-21/07:11:20		Pixel Pirate Scrape Started
+2023-05-21/07:13:18		Pixel Pirate Scrape Successful
+2023-05-21/07:13:18		Pirate Life Scrape Started
+2023-05-21/07:16:35		Pirate Life Scrape Successful
