@@ -1925,3 +1925,7 @@
 2023-05-31/22:14:50		Pixel Pirate Scrape Successful
 2023-05-31/22:14:50		Pirate Life Scrape Started
 2023-05-31/22:18:59		Pirate Life Scrape Successful
+2023-05-31/23:12:58		Pixel Pirate Scrape Started
+2023-05-31/23:13:46		Error occurred while scraping Pixel Pirates for Error: 503 Server Error: Service Temporarily Unavailable for url: https://rpc.ankr.com/fantom
+2023-05-31/23:13:46		Pirate Life Scrape Started
+2023-05-31/23:13:59		Error occurred while scraping Pirate Life for Error: 503 Server Error: Service Temporarily Unavailable for url: https://rpc.ankr.com/fantom
