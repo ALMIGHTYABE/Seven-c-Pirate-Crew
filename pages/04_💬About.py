@@ -61,5 +61,5 @@ cLQDR Value is pulled from Firebird Swap API.
 
 ### If you like this project, you may buy me a cup of coffee. ☕
 """)
-st.code("0x5783Fb2f3d93364041d49097b66086703527AeaC")
+st.code("0xc43521b72e0b7118d88ed29960036fb99cdad94a")
 
