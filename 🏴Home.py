@@ -376,7 +376,7 @@ if selection == "Pirate Life":
             # Batch Wise Info
             batch_count = st.checkbox('See Batchwise Count')
             if batch_count:
-                col1, col2, col3, col4, col5, col6 = st.columns(6)
+                col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
                 col1.metric("Treasure", df[df["Batch"] == "Treasure"].shape[0])
                 col2.metric("Batch 1", df[df["Batch"] == "1"].shape[0])
                 col3.metric("Batch 2", df[df["Batch"] == "2"].shape[0])
