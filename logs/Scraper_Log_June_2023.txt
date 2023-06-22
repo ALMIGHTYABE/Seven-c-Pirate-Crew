@@ -2026,3 +2026,7 @@
 2023-06-22/20:19:17		Pixel Pirate Scrape Successful
 2023-06-22/20:19:17		Pirate Life Scrape Started
 2023-06-22/20:25:03		Pirate Life Scrape Successful
+2023-06-22/21:08:26		Pirate Life Traits Scrape Started
+2023-06-22/21:11:59		Pirate Life Traits Scrape Successful
+2023-06-22/21:11:59		Pirate Life Traits to CSV Started
+2023-06-22/21:11:59		Pirate Life Traits to CSV Successful
