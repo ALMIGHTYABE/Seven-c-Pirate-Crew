@@ -1542,3 +1542,7 @@
 2023-07-09/13:20:49		Pixel Pirate Scrape Successful
 2023-07-09/13:20:49		Pirate Life Scrape Started
 2023-07-09/13:23:38		Error occurred while scraping Pirate Life for Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/fantom
+2023-07-09/14:07:08		Pirate Life Traits Scrape Started
+2023-07-09/14:10:11		Pirate Life Traits Scrape Successful
+2023-07-09/14:10:11		Pirate Life Traits to CSV Started
+2023-07-09/14:10:11		Pirate Life Traits to CSV Successful
