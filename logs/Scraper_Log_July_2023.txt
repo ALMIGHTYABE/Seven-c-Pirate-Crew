@@ -1462,3 +1462,7 @@
 2023-07-09/03:28:39		Pirate Life Traits Scrape Successful
 2023-07-09/03:28:39		Pirate Life Traits to CSV Started
 2023-07-09/03:28:39		Pirate Life Traits to CSV Successful
+2023-07-09/04:10:01		Pirate Life Traits Scrape Started
+2023-07-09/04:12:38		Pirate Life Traits Scrape Successful
+2023-07-09/04:12:38		Pirate Life Traits to CSV Started
+2023-07-09/04:12:38		Pirate Life Traits to CSV Successful
