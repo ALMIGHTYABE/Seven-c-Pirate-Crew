@@ -2017,3 +2017,7 @@
 2023-07-12/04:20:26		Pixel Pirate Scrape Successful
 2023-07-12/04:20:26		Pirate Life Scrape Started
 2023-07-12/04:25:15		Pirate Life Scrape Successful
+2023-07-12/05:08:50		Pirate Life Traits Scrape Started
+2023-07-12/05:12:06		Pirate Life Traits Scrape Successful
+2023-07-12/05:12:06		Pirate Life Traits to CSV Started
+2023-07-12/05:12:06		Pirate Life Traits to CSV Successful
