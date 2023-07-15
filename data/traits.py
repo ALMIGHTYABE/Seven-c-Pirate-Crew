@@ -112,7 +112,7 @@ try:
     log_writer.log(file_object, "Pixel Pirate Traits Scrape Successful")
 except Exception as e:
     log_writer.log(file_object,
-                   "Error occurred while scraping Traits for Pixel Pirates for Error: %s" % e)
+                   "Error occurred while scraping Traits for Pixel Pirates for Error: %s and tokenid: %s" % (e, number))
 
 # Save to CSV
 try:
@@ -194,7 +194,7 @@ try:
     log_writer.log(file_object, "Pirate Life Traits Scrape Successful")
 except Exception as e:
     log_writer.log(file_object,
-                   "Error occurred while scraping Traits for Pirate Life for Error: %s" % e)
+                   "Error occurred while scraping Traits for Pirate Life for Error: %s and tokenid: %s" % (e, number))
 
 # Save to CSV
 try:
