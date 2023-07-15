@@ -2593,3 +2593,7 @@
 2023-07-15/10:10:59		Pirate Life Traits Scrape Successful
 2023-07-15/10:10:59		Pirate Life Traits to CSV Started
 2023-07-15/10:10:59		Pirate Life Traits to CSV Successful
+2023-07-15/10:14:34		Pixel Pirate Scrape Started
+2023-07-15/10:15:15		Error occurred while scraping Pixel Pirates for Error: execution reverted: ERC721: owner query for nonexistent token
+2023-07-15/10:15:15		Pirate Life Scrape Started
+2023-07-15/10:19:08		Pirate Life Scrape Successful
