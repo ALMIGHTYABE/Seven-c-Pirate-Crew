@@ -4008,3 +4008,11 @@
 2023-08-18/03:13:24		Pirate Life Traits Scrape Successful
 2023-08-18/03:13:24		Pirate Life Traits to CSV Started
 2023-08-18/03:13:24		Pirate Life Traits to CSV Successful
+2023-08-18/04:09:23		Pixel Pirate Traits Scrape Started
+2023-08-18/04:10:36		Pixel Pirate Traits Scrape Successful
+2023-08-18/04:10:36		Pixel Pirates Traits to CSV Started
+2023-08-18/04:10:36		Pixel Pirates Traits to CSV Successful
+2023-08-18/04:10:36		Pirate Life Traits Scrape Started
+2023-08-18/04:13:05		Pirate Life Traits Scrape Successful
+2023-08-18/04:13:05		Pirate Life Traits to CSV Started
+2023-08-18/04:13:05		Pirate Life Traits to CSV Successful
