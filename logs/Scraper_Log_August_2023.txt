@@ -6357,3 +6357,11 @@
 2023-08-28/08:17:34		Error occurred while scraping Pixel Pirates for Error: HTTP Error 502: Bad Gateway
 2023-08-28/08:17:34		Pirate Life Scrape Started
 2023-08-28/08:21:55		Pirate Life Scrape Successful
+2023-08-28/09:08:13		Pixel Pirate Traits Scrape Started
+2023-08-28/09:09:34		Pixel Pirate Traits Scrape Successful
+2023-08-28/09:09:34		Pixel Pirates Traits to CSV Started
+2023-08-28/09:09:34		Pixel Pirates Traits to CSV Successful
+2023-08-28/09:09:34		Pirate Life Traits Scrape Started
+2023-08-28/09:12:06		Pirate Life Traits Scrape Successful
+2023-08-28/09:12:06		Pirate Life Traits to CSV Started
+2023-08-28/09:12:07		Pirate Life Traits to CSV Successful
