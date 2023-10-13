@@ -2873,3 +2873,7 @@
 2023-10-13/00:39:27		Pirate Life Traits Scrape Successful
 2023-10-13/00:39:27		Pirate Life Traits to CSV Started
 2023-10-13/00:39:27		Pirate Life Traits to CSV Successful
+2023-10-13/00:59:01		Pixel Pirate Scrape Started
+2023-10-13/01:01:40		Pixel Pirate Scrape Successful
+2023-10-13/01:01:40		Pirate Life Scrape Started
+2023-10-13/01:07:11		Pirate Life Scrape Successful
