@@ -4676,3 +4676,7 @@
 2023-11-22/18:19:33		Pirate Life Traits Scrape Successful
 2023-11-22/18:19:33		Pirate Life Traits to CSV Started
 2023-11-22/18:19:33		Pirate Life Traits to CSV Successful
+2023-11-22/19:11:22		Pixel Pirate Scrape Started
+2023-11-22/19:14:09		Pixel Pirate Scrape Successful
+2023-11-22/19:14:09		Pirate Life Scrape Started
+2023-11-22/19:14:14		Error occurred while scraping Pirate Life for Error: {'code': -32603, 'message': 'internal error'}
