@@ -5148,3 +5148,7 @@
 2023-11-25/05:12:45		Error occurred while scraping Pixel Pirates for Error: execution reverted: ERC721: owner query for nonexistent token
 2023-11-25/05:12:45		Pirate Life Scrape Started
 2023-11-25/05:13:28		Error occurred while scraping Pirate Life for Error: execution reverted: ERC721: owner query for nonexistent token
+2023-11-25/06:16:28		Pixel Pirate Scrape Started
+2023-11-25/06:16:47		Error occurred while scraping Pixel Pirates for Error: execution reverted: ERC721: owner query for nonexistent token
+2023-11-25/06:16:47		Pirate Life Scrape Started
+2023-11-25/06:17:27		Error occurred while scraping Pirate Life for Error: execution reverted: ERC721: owner query for nonexistent token
