@@ -2833,3 +2833,7 @@
 2023-12-15/04:18:59		Pirate Life Traits Scrape Successful
 2023-12-15/04:18:59		Pirate Life Traits to CSV Started
 2023-12-15/04:18:59		Pirate Life Traits to CSV Successful
+2023-12-15/05:13:13		Pixel Pirate Scrape Started
+2023-12-15/05:13:27		Error occurred while scraping Pixel Pirates for Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/fantom
+2023-12-15/05:13:27		Pirate Life Scrape Started
+2023-12-15/05:13:29		Error occurred while scraping Pirate Life for Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/fantom
