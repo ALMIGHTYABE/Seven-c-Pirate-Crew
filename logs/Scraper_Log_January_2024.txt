@@ -253,3 +253,11 @@
 2024-01-02/11:11:58		Error occurred while scraping Pixel Pirates for Error: execution reverted: ERC721: owner query for nonexistent token
 2024-01-02/11:11:58		Pirate Life Scrape Started
 2024-01-02/11:13:04		Error occurred while scraping Pirate Life for Error: execution reverted: ERC721: owner query for nonexistent token
+2024-01-02/12:13:48		Pixel Pirate Traits Scrape Started
+2024-01-02/12:16:44		Pixel Pirate Traits Scrape Successful
+2024-01-02/12:16:44		Pixel Pirates Traits to CSV Started
+2024-01-02/12:16:44		Pixel Pirates Traits to CSV Successful
+2024-01-02/12:16:44		Pirate Life Traits Scrape Started
+2024-01-02/12:22:46		Pirate Life Traits Scrape Successful
+2024-01-02/12:22:46		Pirate Life Traits to CSV Started
+2024-01-02/12:22:46		Pirate Life Traits to CSV Successful
