@@ -465,3 +465,11 @@
 2024-02-02/14:14:52		Pixel Pirate Scrape Successful
 2024-02-02/14:14:52		Pirate Life Scrape Started
 2024-02-02/14:20:10		Pirate Life Scrape Successful
+2024-02-02/15:08:28		Pixel Pirate Traits Scrape Started
+2024-02-02/15:09:05		Pixel Pirate Traits Scrape Successful
+2024-02-02/15:09:05		Pixel Pirates Traits to CSV Started
+2024-02-02/15:09:05		Pixel Pirates Traits to CSV Successful
+2024-02-02/15:09:05		Pirate Life Traits Scrape Started
+2024-02-02/15:10:13		Pirate Life Traits Scrape Successful
+2024-02-02/15:10:13		Pirate Life Traits to CSV Started
+2024-02-02/15:10:13		Pirate Life Traits to CSV Successful
