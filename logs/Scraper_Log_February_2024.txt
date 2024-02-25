@@ -6769,3 +6769,7 @@
 2024-02-25/20:14:59		Pixel Pirate Scrape Successful
 2024-02-25/20:14:59		Pirate Life Scrape Started
 2024-02-25/20:19:44		Pirate Life Scrape Successful
+2024-02-25/21:12:36		Pixel Pirate Scrape Started
+2024-02-25/21:15:25		Pixel Pirate Scrape Successful
+2024-02-25/21:15:25		Pirate Life Scrape Started
+2024-02-25/21:20:26		Pirate Life Scrape Successful
