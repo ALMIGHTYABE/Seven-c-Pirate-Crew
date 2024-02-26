@@ -6785,3 +6785,6 @@
 2024-02-26/01:00:17		Pixel Pirate Scrape Successful
 2024-02-26/01:00:17		Pirate Life Scrape Started
 2024-02-26/01:04:52		Pirate Life Scrape Successful
+2024-02-26/01:52:56		Pixel Pirate Scrape Started
+2024-02-26/01:55:10		Pirate Life Scrape Started
+2024-02-26/01:59:29		Pirate Life Scrape Successful
